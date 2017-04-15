@@ -1,0 +1,7 @@
+Applications:
+  - GUI:
+    - Vivaldi (https://vivaldi.com/download/)
+  - Terminal:
+    - cURL (curl)
+    - Git (git)
+    - Neovim (neovim)
