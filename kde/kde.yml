@@ -1,0 +1,50 @@
+KDE:
+  - Desktop: delete Home and Trash directory
+  - Panel:
+    - Driver Manager:
+      - wait for collecting information about system
+      - activate firmaware for Intel CPU
+    - Bluetooth: deactivate
+    - Battery and Brightness:
+      - decrease Display Brightness
+      - increase and decrease Keyboard Brightness to zero
+    - Audio Volume:
+      - customize speakers / headphones
+      - decrease microphone to zero
+    - Menu:
+      - Screen Edge:
+        - click on this button and hold
+        - move the panel to the top
+      - Add Widgets:
+        - Calculator
+        - Color Picker
+        - Notes
+        - Minimize Windows
+  - System Settings:
+    - Appearance:
+      - Fonts:
+        - Fixed width: Hack 12
+    - Workspace:
+      - Desktop Behavior:
+        - Screen Locking:
+          - Wallpaper:
+            - Wallpaper Type: Image (same as desktop background)
+    - Personalization:
+      - Regional Settings:
+        - Formats: Detailed Settings
+      - Notifications:
+        - Other Notifications:
+          - Notification type: Tray icons only
+    - Network:
+      - Connections:
+        - IPv4:
+          - Method: Automatic (Only addresses)
+          - DNS Servers: 8.8.8.8, 8.8.4.4
+        - IPv6:
+          - Method: Automatic (Only addresses)
+          - DNS Servers: 2001:4860:4860::8888, 2001:4860:4860::8844
+    - Hardware:
+      - Input Devices:
+        - Touchpad:
+          - Scrolling:
+            - Two-finger scrolling: Horizontal
