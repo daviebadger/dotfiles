@@ -1,0 +1,24 @@
+Vivaldi:
+  - Settings:
+    - Startup:
+      - Default Browser: Set as Default
+      - Homepage: Start Page
+      - Startup with: Start Page
+    - Appearance:
+      - Window Apperance:
+        - Use Native Window
+        - Open Settings in a Tab
+    - Bookmarks:
+      - Bookmark Bar: Show Bookmark Bar
+    - Search:
+      - Search Engines: DuckDuckGo
+    - Privacy:
+      - Do Not Track: Ask Websites Not to Track Me
+      - Passwords: Not Save Webpage Passwords
+      - Cookies:
+        - Accept Cookies: Session Only
+        - Third-Party Cookies: Block Third-Party Cookies
+  - Bookmarks:
+    - remove all default bookmarks
+  - Extensions:
+    - uBlock Origin
