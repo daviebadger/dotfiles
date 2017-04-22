@@ -105,6 +105,10 @@ set splitright
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
+" Enable Airline if there is the only window.
+
+set laststatus=2
+
 " NERDTree
 " --------
 
