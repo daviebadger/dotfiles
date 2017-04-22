@@ -5,4 +5,4 @@ Applications:
   - Terminal:
     - cURL (curl)
     - Git (git)
-    - Neovim (neovim)
+    - Vim (Vim)
