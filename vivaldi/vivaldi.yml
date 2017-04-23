@@ -11,9 +11,7 @@ Vivaldi:
     - Bookmarks:
       - Bookmark Bar: Show Bookmark Bar
     - Search:
-      - Search:
-        - Always Search in New Tab
-        - Not Search in Address Field
+      - Search: Not Show Search Field in Address Bar
       - Search Engines: Google
     - Privacy:
       - Do Not Track: Ask Websites Not to Track Me
