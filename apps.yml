@@ -1,8 +1,6 @@
 Applications:
   - GUI:
     - MEGA (https://mega.nz/sync)
-    - Vivaldi (https://vivaldi.com/download/)
   - Terminal:
-    - cURL (curl)
     - Git (git)
     - Vim (Vim)
