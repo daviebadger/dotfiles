@@ -1,9 +1,11 @@
 Preferences:
   Application:
     Appearance:
-      Theme variant: Dark
+      Theme_variant: Dark
   Profiles:
     Default:
+      Terminal_size: 85
+      Terminal_columns: 33
       Font:
         - https://github.com/powerline/fonts
         - Ubuntu Mono derivative Powerline Regular 12
