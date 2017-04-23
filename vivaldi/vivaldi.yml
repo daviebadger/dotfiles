@@ -1,26 +1,26 @@
 Vivaldi:
   - Settings:
     - Startup:
-      - Default Browser: Set as Default
+      - Default_Browser: Set as Default
       - Homepage: Start Page
-      - Startup with: Start Page
+      - Startup_with: Start Page
     - Appearance:
-      - Window Apperance:
+      - Window_Apperance:
         - Use Native Window
         - Open Settings in a Tab
     - Tabs:
-      - Tab Handling: Not Don't Close Window with Last Tab
+      - Tab_Handling: Not Don't Close Window with Last Tab
     - Bookmarks:
-      - Bookmark Bar: Show Bookmark Bar
+      - Bookmark_Bar: Show Bookmark Bar
     - Search:
       - Search: Not Show Search Field in Address Bar
-      - Search Engines: Google
+      - Search_Engines: Google
     - Privacy:
-      - Do Not Track: Ask Websites Not to Track Me
+      - Do_Not_Track: Ask Websites Not to Track Me
       - Passwords: Not Save Webpage Passwords
       - Cookies:
-        - Accept Cookies: Session Only
-        - Third-Party Cookies: Block Third-Party Cookies
+        - Accept_Cookies: Session Only
+        - Third-Party_Cookies: Block Third-Party Cookies
   - Bookmarks:
     - remove all default bookmarks
   - Extensions:
