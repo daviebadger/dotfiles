@@ -8,6 +8,8 @@ Vivaldi:
       - Window Apperance:
         - Use Native Window
         - Open Settings in a Tab
+    - Tabs:
+      - Tab Handling: Not Don't Close Window with Last Tab
     - Bookmarks:
       - Bookmark Bar: Show Bookmark Bar
     - Search:
