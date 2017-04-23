@@ -4,6 +4,7 @@ Settings:
       Appearance:
         Icon theme: Moka
     Panel:
+      Size: 40
       Applets:
         Start: Icon Task List
         End: Keyboard Layout Indicator
@@ -25,7 +26,4 @@ Settings:
       Sound:
         Sound Effect: Not Alert volume
 Other:
-  Startup_Applications: Not Plank (dock)
-  Grub:
-    - /etc/default/grub
-    - GRUB_TIMEOUT=0
+  Startup_Applications: Not budgie-plank (dock)
