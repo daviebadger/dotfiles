@@ -1,0 +1,10 @@
+Preferences:
+  Application:
+    Appearance:
+      Theme variant: Dark
+  Profiles:
+    Default:
+      Font:
+        - https://github.com/powerline/fonts
+        - Ubuntu Mono derivative Powerline Regular 12
+      Scrolling: Not Show scrollbar
