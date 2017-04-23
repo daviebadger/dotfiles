@@ -11,6 +11,9 @@ Vivaldi:
     - Bookmarks:
       - Bookmark Bar: Show Bookmark Bar
     - Search:
+      - Search:
+        - Always Search in New Tab
+        - Not Search in Address Field
       - Search Engines: Google
     - Privacy:
       - Do Not Track: Ask Websites Not to Track Me
@@ -21,6 +24,6 @@ Vivaldi:
   - Bookmarks:
     - remove all default bookmarks
   - Extensions:
-    - uBlock Origin
     - MEGA
     - Poper Blocker
+    - uBlock Origin
