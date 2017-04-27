@@ -4,9 +4,16 @@ Preferences:
       Theme_variant: Dark
   Profiles:
     Default:
-      Terminal_size: 85
-      Terminal_columns: 33
-      Font:
-        - https://github.com/powerline/fonts
-        - Ubuntu Mono derivative Powerline Regular 12
+      General:
+        Terminal_size: 85
+        Terminal_columns: 33
+        Font:
+          - https://github.com/powerline/fonts
+          - Ubuntu Mono derivative Powerline Regular 12
+      Color:
+        Color_scheme: Tango
+        Options: Not Use theme colors for foreground/background
+        Color_palette:
+          Background: black
+          Foreground: white
       Scrolling: Not Show scrollbar
