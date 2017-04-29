@@ -5,10 +5,14 @@ Settings:
         Icon_theme: Moka
     Panel:
       Size: 40
+      Shadow: deactivate
       Applets:
         Start: Icon Task List
         End: Keyboard Layout Indicator
   System:
+    Personal:
+      Background: my wallpaper from cloud (cp to ~/Pictures)
+      Lock_Sreen: same as previous
     Hardware:
       Mouse_&_Touchpad:
         Touchpad: Not Natural Scrolling
