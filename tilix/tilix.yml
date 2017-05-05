@@ -1,6 +1,7 @@
 Preferences:
   Application:
     Appearance:
+      Terminal_title_style: None
       Theme_variant: Dark
   Profiles:
     Default:
