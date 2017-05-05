@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
 " Appearance
 " ----------
 
+Plug 'edkolev/promptline.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 
