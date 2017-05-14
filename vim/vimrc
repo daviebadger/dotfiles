@@ -9,15 +9,19 @@
 "
 " * Basics
 "
-"   * Line
-"   * Tab
+"   * Clipboard
+"   * Line breaks
+"   * Line numbers
+"   * Search
+"   * Swap files
+"   * Tabs
 "
 "     * Global
 "     * Local
 "
 "   * Theme
-"   * Whitespace
-"   * Window
+"   * Whitespaces
+"   * Windows
 "
 " * Plugins
 "
@@ -46,24 +50,51 @@ call plug#end()
 " Basics
 " ======
 
-" Line
+" Clipboard
+" ---------
+
+set clipboard=unnamedplus  " enable copying / pasting from / to Vim
+
+" Line breaks
+" -----------
+
+set textwidth=79  " break lines automatically
+set nowrap        " do not wrap lines if window is small
+
+" Line numbers
+" ------------
+
+set number          " show line numbers
+set colorcolumn=80  " show ruler
+
+" Search
+" ------
+
+set hlsearch   " highlight founded results
+set incsearch  " immediately jump to first found result if possible
+
+" clear highlights after ESC
+
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
+" Swap files
+" ----------
+
+set directory=~/.vim/swaps//  " the only place for swaps with absolute paths
+
+" Tabs
 " ----
-
-set number
-set colorcolumn=80
-
-" Tab
-" ---
 
 " Global
 " ^^^^^^
 
-set expandtab  " Tab to spaces.
-set smarttab   " Spaces like tab.
+set expandtab  " tabs to spaces
+set smarttab   " spaces like tabs
 
-set softtabstop=4  " Keep source tab size, but visually convert to my tab size.
-set shiftwidth=4   " Indendation size.
-set tabstop=4      " Tab size.
+set tabstop=4      " tab size
+set shiftwidth=4   " indendation size
+set softtabstop=4  " keep source tab size, but visually convert to my tab size
 
 " Local
 " ^^^^^
@@ -79,10 +110,10 @@ autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 colorscheme badwolf
 
-" Whitespace
-" ----------
+" Whitespaces
+" -----------
 
-" Highlight whitespace at the end of line.
+" show whitespaces at the end of line
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -91,8 +122,8 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Window
-" ------
+" Windows
+" -------
 
 set splitbelow
 set splitright
@@ -106,23 +137,21 @@ set splitright
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
-" Enable Airline if there is the only window.
-
-set laststatus=2
+set laststatus=2  " enable Airline if there is the only window
 
 " NERDTree
 " --------
 
-" Open NERDTree if no file specified.
+" open NERDTree if no file specified
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Open NERDTree if directory specified.
+" open NERDTree if directory specified
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
-" Close Neovim if last open window would be NERDTree.
+" close Neovim if last open window would be NERDTree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
