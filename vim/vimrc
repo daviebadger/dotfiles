@@ -5,7 +5,14 @@
 " * Plug Manager
 "
 "   * Appearance
+"
+"     * Colorscheme
+"     * Prompt
+"     * Status
+"
+"   * Auto closing
 "   * Filesystem
+"   * Git
 "
 " * Basics
 "
@@ -36,14 +43,35 @@ call plug#begin('~/.vim/plugged')
 " Appearance
 " ----------
 
+" Colorscheme
+" ^^^^^^^^^^^
+
+Plug 'sjl/badwolf'
+
+" Prompt
+" ^^^^^^
+
 Plug 'edkolev/promptline.vim'
-Plug 'flazz/vim-colorschemes'
+
+" Status
+" ^^^^^^
+
 Plug 'vim-airline/vim-airline'
+
+" Auto closing
+" ------------
+
+Plug 'jiangmiao/auto-pairs'
 
 " Filesystem
 " ----------
 
 Plug 'scrooloose/nerdtree'
+
+" Git
+" ---
+
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
