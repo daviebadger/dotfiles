@@ -3,4 +3,5 @@ Applications:
     - MEGA (https://mega.nz/sync)
   - Terminal:
     - Git (git)
+    - Pip (python3-pip)
     - Vim (vim-gnome)
