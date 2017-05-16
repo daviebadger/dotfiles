@@ -74,6 +74,11 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'tpope/vim-fugitive'
 
+" Motion
+" ------
+
+Plug 'easymotion/vim-easymotion'
+
 call plug#end()
 
 " Basics
