@@ -139,13 +139,21 @@ autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 colorscheme badwolf
 
+highlight LineNr ctermfg=white
+
+highlight pythonInclude cterm=bold ctermfg=154
+highlight pythonOperator cterm=bold ctermfg=196
+highlight pythonRepeat cterm=bold ctermfg=196
+
 " Whitespaces
 " -----------
 
 " show whitespaces at the end of line
 
-highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=red
+
 match ExtraWhitespace /\s\+$/
+
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
