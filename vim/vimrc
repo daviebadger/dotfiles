@@ -34,6 +34,7 @@
 "
 "   * Airline
 "   * NERDTree
+"   * Promptline
 
 " Plug Manager
 " ============
@@ -183,3 +184,12 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " close Vim if last open window would be NERDTree
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Promptline
+" ----------
+
+let g:promptline_preset = {
+    \'a' : [ promptline#slices#user() ],
+    \'b' : [ '\w' ],
+    \'c' : [ promptline#slices#vcs_branch() ],
+    \'y' : [ promptline#slices#python_virtualenv() ]}
