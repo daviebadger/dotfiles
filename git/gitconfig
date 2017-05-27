@@ -3,3 +3,4 @@
 	email = davie.badger@gmail.com
 [core]
 	editor = vim
+	excludesfile = /home/davie/.gitignore
