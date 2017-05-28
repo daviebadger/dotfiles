@@ -10,7 +10,7 @@
 "     * Prompt
 "     * Status
 "
-"   * Auto closing
+"   * Brackets & quotes
 "   * Filesystem
 "   * Git
 "   * Motion
@@ -18,10 +18,13 @@
 " * Basics
 "
 "   * Clipboard
-"   * Line breaks
-"   * Line numbers
+"   * Lines
+"
+"     * Breaks
+"     * Numbers
+"
 "   * Search
-"   * Swap files
+"   * Swaps
 "   * Tabs
 "
 "     * Global
@@ -34,7 +37,7 @@
 " * Plugins
 "
 "   * Airline
-"   * Easy Motion
+"   * EasyMotion
 "   * NERDTree
 "   * Promptline
 
@@ -61,10 +64,11 @@ Plug 'edkolev/promptline.vim'
 
 Plug 'vim-airline/vim-airline'
 
-" Auto closing
-" ------------
+" Brackets & quotes
+" -----------------
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 " Filesystem
 " ----------
@@ -91,14 +95,17 @@ call plug#end()
 
 set clipboard=unnamedplus  " enable copying / pasting from / to Vim
 
-" Line breaks
-" -----------
+" Lines
+" -----
+
+" Breaks
+" ^^^^^^
 
 set textwidth=79  " break lines automatically
 set nowrap        " do not wrap lines if window is small
 
-" Line numbers
-" ------------
+" Numbers
+" ^^^^^^^
 
 set number          " show line numbers
 set colorcolumn=80  " show ruler
@@ -114,8 +121,8 @@ set incsearch  " immediately jump to first found result if possible
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
-" Swap files
-" ----------
+" Swaps
+" -----
 
 set directory=~/.vim/swaps//  " the only place for swaps with absolute paths
 
@@ -181,10 +188,10 @@ let g:airline#extensions#tabline#enabled=1
 
 set laststatus=2  " enable Airline if there is the only window
 
-" Easy Motion
+" EasyMotion
 " -----------
 
-" trigger Easy Motion when \ pressed instead of \\
+" trigger EasyMotion when \ pressed instead of \\
 
 map <Leader> <Plug>(easymotion-prefix)
 
