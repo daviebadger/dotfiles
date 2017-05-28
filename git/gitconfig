@@ -4,3 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /home/davie/.gitignore
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
