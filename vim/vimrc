@@ -49,7 +49,7 @@ call plug#begin('~/.vim/plugged')
 " Colorscheme
 " ^^^^^^^^^^^
 
-Plug 'sjl/badwolf'
+Plug 'roosta/vim-srcery'
 
 " Prompt
 " ^^^^^^
@@ -144,13 +144,11 @@ autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 " Theme
 " -----
 
-colorscheme badwolf
+set termguicolors
 
-highlight LineNr ctermfg=white
+colorscheme srcery
 
-highlight pythonInclude cterm=bold ctermfg=154
-highlight pythonOperator cterm=bold ctermfg=196
-highlight pythonRepeat cterm=bold ctermfg=196
+let g:srcery_underline=0
 
 " Whitespaces
 " -----------
