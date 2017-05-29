@@ -67,7 +67,6 @@ Plug 'vim-airline/vim-airline'
 " Brackets & quotes
 " -----------------
 
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Filesystem
