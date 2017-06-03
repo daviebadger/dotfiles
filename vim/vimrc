@@ -37,6 +37,7 @@
 " * Plugins
 "
 "   * Airline
+"   * AutoPairs
 "   * EasyMotion
 "   * NERDTree
 "   * Promptline
@@ -67,6 +68,7 @@ Plug 'vim-airline/vim-airline'
 " Brackets & quotes
 " -----------------
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Filesystem
@@ -161,7 +163,7 @@ let g:srcery_underline=0
 
 " show whitespaces at the end of line
 
-highlight ExtraWhitespace ctermbg=red
+highlight ExtraWhitespace ctermbg=red guibg=red
 
 match ExtraWhitespace /\s\+$/
 
@@ -186,6 +188,11 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
 set laststatus=2  " enable Airline if there is the only window
+
+" AutoPairs
+" ---------
+
+let g:AutoPairsShortcutToggle='<F4>'
 
 " EasyMotion
 " -----------
