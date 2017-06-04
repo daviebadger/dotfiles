@@ -12,3 +12,26 @@
 	tool = vimdiff
 [mergetool]
 	prompt = false
+[alias]
+    a = add
+    b = branch
+    c = commit
+    ch = checkout
+    cl = clone
+    co = config
+    d = diff
+    dt = difftool
+    f = fetch
+	h = log --pretty=format:\"%h - %s (%an, %cr)\" --graph
+    i = init
+    l = log
+    m = merge
+    mt = mergetool
+    p = push
+    pu = pull
+    r = reset
+    re = remote
+	s = status
+    sh = show
+    st = stash
+    t = tag
