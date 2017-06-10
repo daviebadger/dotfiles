@@ -41,6 +41,8 @@
 "   * EasyMotion
 "   * NERDTree
 "   * Promptline
+"
+" * Vimdiff
 
 " Plug Manager
 " ============
@@ -226,3 +228,9 @@ let g:promptline_preset = {
     \'b' : [ '\w' ],
     \'c' : [ promptline#slices#vcs_branch() ],
     \'y' : [ promptline#slices#python_virtualenv() ]}
+
+" Vimdiff
+" =======
+
+map ] ]c
+map [ [c
