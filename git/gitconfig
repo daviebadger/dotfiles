@@ -15,13 +15,17 @@
 [alias]
     a = add
     b = branch
+    bl = blame
     c = commit
     ch = checkout
     cl = clone
+    cle = clean
     co = config
+    cp = cherry-pick
     d = diff
     dt = difftool
     f = fetch
+    g = grep
 	h = log --pretty=format:\"%h - %s (%an, %cr)\" --graph
     i = init
     l = log
@@ -31,7 +35,11 @@
     pu = pull
     r = reset
     re = remote
+    reb = rebase
+    ref = reflog
+    rev = revert
 	s = status
     sh = show
+    sho = shortlog
     st = stash
     t = tag
