@@ -10,10 +10,12 @@
 "     * Prompt
 "     * Status
 "
+"   * Autocomplete
 "   * Brackets & quotes
 "   * Filesystem
 "   * Git
 "   * Motion
+"   * Syntax
 "
 " * Basics
 "
@@ -41,6 +43,7 @@
 "   * EasyMotion
 "   * NERDTree
 "   * Promptline
+"   * Syntastic
 "
 " * Vimdiff
 
@@ -67,10 +70,15 @@ Plug 'edkolev/promptline.vim'
 
 Plug 'vim-airline/vim-airline'
 
+" Autocomplete
+" ------------
+
+" Plug 'Valloric/YouCompleteMe'
+Plug 'jiangmiao/auto-pairs'
+
 " Brackets & quotes
 " -----------------
 
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
 " Filesystem
@@ -87,6 +95,11 @@ Plug 'tpope/vim-fugitive'
 " ------
 
 Plug 'easymotion/vim-easymotion'
+
+" Syntax
+" ------
+
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
@@ -228,6 +241,32 @@ let g:promptline_preset = {
     \'b' : [ '\w' ],
     \'c' : [ promptline#slices#vcs_branch() ],
     \'y' : [ promptline#slices#python_virtualenv() ]}
+
+" Syntastic
+" ---------
+
+" Show error in command line if cursor is on line with the error
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" Automatically open quick window with errors and close if no errors
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+
+" Check for errors if buffer is opened and for each write action except for
+" quit
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Enabling checkers
+
+let g:syntastic_markdown_checkers = ['mdl']
+let g:syntastic_python_checkers = ['flake8', 'pylint']
+let g:syntastic_rst_checkers = ['rst2pseudoxml']
 
 " Vimdiff
 " =======
