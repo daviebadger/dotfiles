@@ -268,6 +268,11 @@ let g:syntastic_markdown_checkers = ['mdl']
 let g:syntastic_python_checkers = ['flake8', 'pylint']
 let g:syntastic_rst_checkers = ['rst2pseudoxml']
 
+" Close quick window if buffer deleted
+
+nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
+cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
+
 " Vimdiff
 " =======
 
