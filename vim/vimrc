@@ -255,6 +255,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
 
 " Check for errors if buffer is opened and for each write action except for
 " quit
