@@ -17,6 +17,9 @@
 "   * Motion
 "   * Syntax
 "
+"     * Checker
+"     * Support
+"
 " * Basics
 "
 "   * Clipboard
@@ -27,6 +30,7 @@
 "
 "   * Search
 "   * Swaps
+"   * Syntax
 "   * Tabs
 "
 "     * Global
@@ -99,7 +103,15 @@ Plug 'easymotion/vim-easymotion'
 " Syntax
 " ------
 
+" Checker
+" ^^^^^^^
+
 Plug 'scrooloose/syntastic'
+
+" Support
+" ^^^^^^^
+
+Plug 'othree/html5.vim'
 
 call plug#end()
 
