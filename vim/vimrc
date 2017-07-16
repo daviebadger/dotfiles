@@ -2,149 +2,207 @@
 " Structure
 " *********
 "
-" * Plug Manager
-"
-"   * Appearance
-"
-"     * Colorscheme
-"     * Prompt
-"     * Status
-"
-"   * Autocomplete
-"   * Brackets & quotes
-"   * Filesystem
-"   * Git
-"   * Motion
-"   * Syntax
-"
-"     * Checker
-"     * Support
-"
-" * Basics
-"
-"   * Clipboard
-"   * Lines
-"
-"     * Breaks
-"     * Numbers
-"
-"   * Search
-"   * Swaps
-"   * Syntax
-"   * Tabs
-"
-"     * Global
-"     * Local
-"
-"   * Theme
-"   * Whitespaces
-"   * Windows
-"
 " * Plugins
 "
-"   * Airline
-"   * AutoPairs
-"   * EasyMotion
-"   * NERDTree
-"   * Promptline
-"   * Syntastic
+"   * Initialization
 "
-" * Vimdiff
+"     * HTML
+"     * Python
+"     * RST
+"
+"   * Settings
+"
+"     * Airline
+"     * AutoPairs
+"     * NERDTree
+"     * NERDTreeTabs
+"     * Promptline
+"     * PythonMode
+"     * Srcery
+"     * Syntastic
+"     * YouCompleteMe
+"
+" * Vim
+"
+"   * Clipboard
+"   * Indentation
+"   * Search
+"   * Swaps
+"   * Whitespaces
+"   * Window
 
-" Plug Manager
-" ============
+" Plugins
+" =======
+
+" Initialization
+" --------------
 
 call plug#begin('~/.vim/plugged')
 
-" Appearance
-" ----------
-
-" Colorscheme
-" ^^^^^^^^^^^
-
-Plug 'roosta/vim-srcery'
-
-" Prompt
-" ^^^^^^
-
-Plug 'edkolev/promptline.vim'
-
-" Status
-" ^^^^^^
-
-Plug 'vim-airline/vim-airline'
-
-" Autocomplete
-" ------------
-
-" Plug 'Valloric/YouCompleteMe'
-Plug 'jiangmiao/auto-pairs'
-
-" Brackets & quotes
-" -----------------
-
-Plug 'tpope/vim-surround'
-
-" Filesystem
-" ----------
-
-Plug 'scrooloose/nerdtree'
-
-" Git
-" ---
-
-Plug 'tpope/vim-fugitive'
-
-" Motion
-" ------
-
+Plug 'airblade/vim-gitgutter'
+Plug 'bling/vim-airline'
+" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
-
-" Syntax
-" ------
-
-" Checker
-" ^^^^^^^
-
+Plug 'edkolev/promptline.vim'
+Plug 'jiangmiao/auto-pairs', {'commit': '3bd07a4'}
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Konfekt/FastFold'
+Plug 'roosta/srcery'
+" Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'valloric/youcompleteme', {'do': 'python3 install.py --tern-completer'}
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Support
-" ^^^^^^^
+" HTML
+" ^^^^
 
 Plug 'othree/html5.vim'
 
+" Python
+" ^^^^^^
+
+Plug 'klen/python-mode'
+
+" RST
+" ^^^
+
+Plug 'Rykka/riv.vim'
+
 call plug#end()
 
-" Basics
-" ======
+" Settings
+" --------
+
+" Airline
+" ^^^^^^^
+
+set laststatus=2
+
+let g:airline#extensions#tabline#enabled = 1
+
+" AutoPairs
+" ^^^^^^^^^
+
+let g:AutoPairsShortcutToggle='<F4>'
+
+" NERDTree
+" ^^^^^^^^
+
+let NERDTreeIgnore = [
+    \ '^build$',
+    \ '^dist$',
+    \ '^\.git$',
+    \ 'egg-info$',
+    \ '^\.mypy_cache$',
+    \ '^__pycache__$']
+let NERDTreeShowHidden = 1
+
+" open NERDTree if directory specified as argument to Vim
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" NERDTreeTabs
+" ^^^^^^^^^^^^
+
+nnoremap <C-m> :NERDTreeFocusToggle<CR>
+nnoremap <C-n> :NERDTreeMirrorToggle<CR>
+
+" Promptline
+" ^^^^^^^^^^
+
+let g:promptline_preset = {
+    \'a' : [ promptline#slices#user() ],
+    \'b' : [ '\w' ],
+    \'c' : [ promptline#slices#vcs_branch() ],
+    \'y' : [ promptline#slices#python_virtualenv() ]}
+
+" PythonMode
+" ^^^^^^^^^^
+
+let g:pymode_lint = 0
+let g:pymode_rope = 0
+let g:pymode_virtualenv = 0
+
+" Srcery
+" ^^^^^^
+
+set termguicolors
+
+let g:srcery_underline = 0
+
+colorscheme srcery
+
+" Syntastic
+" ^^^^^^^^^
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_markdown_checkers = ['mdl']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_rst_checkers = ['rst2pseudoxml']
+
+" close quick window with buffer at once
+
+cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
+
+" YouCompleteMe
+" ^^^^^^^^^^^^^
+
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_complete_in_strings = 0
+let g:ycm_filetype_whitelist = {'python': 1}
+let g:ycm_goto_buffer_command = 'horizontal-split'
+let g:ycm_python_binary_path = 'python3'
+
+nnoremap <leader>d :YcmCompleter GetDoc<CR>
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>n :YcmCompleter GoToReferences<CR>
+
+" Vim
+" ===
 
 " Clipboard
 " ---------
 
-set clipboard=unnamedplus  " enable copying / pasting from / to Vim
+set clipboard=unnamedplus
 
-" Lines
-" -----
+" Indention
+" ---------
 
-" Breaks
-" ^^^^^^
+set expandtab
+set smarttab
 
-set textwidth=79  " break lines automatically
-set nowrap        " do not wrap lines if window is small
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 
-" Numbers
-" ^^^^^^^
-
-set number          " show line numbers
-set colorcolumn=80  " show ruler
+autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd Filetype css setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType rst setlocal shiftwidth=3 softtabstop=3 tabstop=3
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 " Search
 " ------
 
-set hlsearch   " highlight founded results
-set incsearch  " immediately jump to first found result if possible
-
-" clear highlights after ESC
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
 
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
@@ -152,43 +210,10 @@ nnoremap <esc>^[ <esc>^[
 " Swaps
 " -----
 
-set directory=~/.vim/swaps//  " the only place for swaps with absolute paths
-
-" Tabs
-" ----
-
-" Global
-" ^^^^^^
-
-set expandtab  " tabs to spaces
-set smarttab   " spaces like tabs
-
-set tabstop=4      " tab size
-set shiftwidth=4   " indendation size
-set softtabstop=4  " keep source tab size, but visually convert to my tab size
-
-" Local
-" ^^^^^
-
-autocmd Filetype css setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype js setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype rst setlocal tabstop=3 shiftwidth=3 softtabstop=3
-autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
-
-" Theme
-" -----
-
-set termguicolors
-
-colorscheme srcery
-
-let g:srcery_underline=0
+set directory=~/.vim/swaps//
 
 " Whitespaces
 " -----------
-
-" show whitespaces at the end of line
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 
@@ -199,96 +224,13 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Windows
-" -------
+" Window
+" ------
+
+set number
+set colorcolumn=80
+
+set nowrap
 
 set splitbelow
 set splitright
-
-" Plugins
-" =======
-
-" Airline
-" -------
-
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=1
-
-set laststatus=2  " enable Airline if there is the only window
-
-" AutoPairs
-" ---------
-
-let g:AutoPairsShortcutToggle='<F4>'
-
-" EasyMotion
-" -----------
-
-" trigger EasyMotion when \ pressed instead of \\
-
-map <Leader> <Plug>(easymotion-prefix)
-
-" NERDTree
-" --------
-
-" open NERDTree if no file specified
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" open NERDTree if directory specified
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-" close Vim if last open window would be NERDTree
-
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" Promptline
-" ----------
-
-let g:promptline_preset = {
-    \'a' : [ promptline#slices#user() ],
-    \'b' : [ '\w' ],
-    \'c' : [ promptline#slices#vcs_branch() ],
-    \'y' : [ promptline#slices#python_virtualenv() ]}
-
-" Syntastic
-" ---------
-
-" Show error in command line if cursor is on line with the error
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" Automatically open quick window with errors and close if no errors
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_loc_list_height = 5
-
-" Check for errors if buffer is opened and for each write action except for
-" quit
-
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Enabling checkers
-
-let g:syntastic_html_checkers = ['tidy']
-let g:syntastic_markdown_checkers = ['mdl']
-let g:syntastic_python_checkers = ['flake8', 'pylint']
-let g:syntastic_rst_checkers = ['rst2pseudoxml']
-
-" Close quick window if buffer deleted
-
-nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
-cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
-
-" Vimdiff
-" =======
-
-map ] ]c
-map [ [c
