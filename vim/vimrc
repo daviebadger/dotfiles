@@ -6,6 +6,7 @@
 "
 "   * Initialization
 "
+"     * CSS
 "     * HTML
 "     * Python
 "     * RST
@@ -56,9 +57,16 @@ Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme', {'do': 'python3 install.py --tern-completer'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" CSS
+" ^^^
+
+Plug 'ap/vim-css-color'
+Plug 'hail2u/vim-css3-syntax'
+
 " HTML
 " ^^^^
 
+Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 
 " Python
