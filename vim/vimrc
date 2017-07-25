@@ -66,8 +66,11 @@ Plug 'hail2u/vim-css3-syntax'
 " HTML
 " ^^^^
 
+Plug 'alvan/vim-closetag'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
+Plug 'valloric/matchtagalways'
+Plug 'vim-scripts/matchit.zip'
 
 " Python
 " ^^^^^^
