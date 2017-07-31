@@ -20,6 +20,7 @@
 "     * NERDTreeTabs
 "     * Promptline
 "     * PythonMode
+"     * Riv
 "     * Srcery
 "     * Syntastic
 "     * YouCompleteMe
@@ -144,6 +145,12 @@ let g:promptline_preset = {
 let g:pymode_lint = 0
 let g:pymode_rope = 0
 let g:pymode_virtualenv = 0
+
+" Riv
+" ^^^
+
+let g:riv_fold_level = 1
+let g:riv_section_levels = '*=-^"'''
 
 " Srcery
 " ^^^^^^
