@@ -81,6 +81,7 @@ Plug 'klen/python-mode'
 " RST
 " ^^^
 
+Plug 'rykka/instantrst'
 Plug 'Rykka/riv.vim'
 
 call plug#end()
