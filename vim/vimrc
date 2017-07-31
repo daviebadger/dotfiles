@@ -15,6 +15,7 @@
 "
 "     * Airline
 "     * AutoPairs
+"     * GitGutter
 "     * NERDTree
 "     * NERDTreeTabs
 "     * Promptline
@@ -98,6 +99,11 @@ let g:airline#extensions#tabline#enabled = 1
 " ^^^^^^^^^
 
 let g:AutoPairsShortcutToggle='<F4>'
+
+" GitGutter
+" ^^^^^^^^^
+
+set updatetime=250
 
 " NERDTree
 " ^^^^^^^^
