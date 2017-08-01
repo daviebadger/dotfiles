@@ -133,6 +133,7 @@ nnoremap <C-n> :NERDTreeMirrorToggle<CR>
 " Promptline
 " ^^^^^^^^^^
 
+let g:promptline_powerline_symbols = 0
 let g:promptline_preset = {
     \'a' : [ promptline#slices#user() ],
     \'b' : [ '\w' ],
