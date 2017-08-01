@@ -181,6 +181,9 @@ let g:syntastic_markdown_checkers = ['mdl']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_rst_checkers = ['rst2pseudoxml']
 
+nnoremap <F3> :SyntasticCheck<CR>
+nnoremap <C-X> :SyntasticReset<CR>
+
 " close quick window with buffer at once
 
 cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
