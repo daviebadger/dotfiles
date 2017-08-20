@@ -16,6 +16,7 @@
 "     * Airline
 "     * AutoPairs
 "     * GitGutter
+"     * NERDCommenter
 "     * NERDTree
 "     * NERDTreeTabs
 "     * Promptline
@@ -51,7 +52,7 @@ Plug 'jiangmiao/auto-pairs', {'commit': '3bd07a4'}
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Konfekt/FastFold'
 Plug 'roosta/srcery'
-" Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -106,6 +107,18 @@ let g:AutoPairsShortcutToggle='<F4>'
 " ^^^^^^^^^
 
 set updatetime=250
+
+" NERDCommenter
+" ^^^^^^^^^^^^^
+
+let g:NERDDefaultAlign = 'left'
+
+let g:NERDCommentEmptyLines = 1
+let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
+
+let g:NERDCustomDelimiters = {
+    \ 'python': { 'left': '#' }}
 
 " NERDTree
 " ^^^^^^^^
