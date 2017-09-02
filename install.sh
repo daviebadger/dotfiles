@@ -102,10 +102,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # Configuration
 # -------------
 
-mkdir gitlab
-cd gitlab
+mkdir github
+cd github
 
-git clone https://gitlab.com/daviebadger/configs.git
+git clone https://github.com/daviebadger/configs.git
 
 cd configs
 
