@@ -14,7 +14,7 @@
 	prompt = false
 [alias]
 	a = add
-	b = branch	
+	b = branch
 	bl = blame
 	c = commit
 	ch = checkout
