@@ -8,13 +8,11 @@ Preferences:
       General:
         Terminal_size: 85
         Terminal_columns: 33
-        Font:
-          - https://github.com/powerline/fonts
-          - Ubuntu Mono derivative Powerline Regular 12
+        Text_Apperance:
+          Custom font: Ubuntu Mono derivative Powerline Regular 12
       Color:
         Color_scheme: Tango
         Options: Not Use theme colors for foreground/background
         Color_palette:
-          Background: black
-          Foreground: white
+          Foreground: White
       Scrolling: Not Show scrollbar
