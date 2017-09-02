@@ -57,7 +57,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme', {'do': 'python3 install.py --tern-completer'}
+Plug 'valloric/youcompleteme', {'do': 'sudo python3 install.py'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " CSS
@@ -117,8 +117,7 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
 
-let g:NERDCustomDelimiters = {
-    \ 'python': { 'left': '#' }}
+let g:NERDCustomDelimiters = {'python': { 'left': '#' }}
 
 " NERDTree
 " ^^^^^^^^
