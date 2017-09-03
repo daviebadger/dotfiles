@@ -67,6 +67,11 @@ pip3 install ${pip_packages[@]}
 # Scripts
 # -------
 
+# InstantRst
+# ^^^^^^^^^^
+
+pip3 install https://github.com/Rykka/instant-rst.py/archive/master.zip
+
 # MEGA
 # ^^^^
 
