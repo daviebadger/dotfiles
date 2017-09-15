@@ -29,6 +29,7 @@
 " * Vim
 "
 "   * Clipboard
+"   * Folding
 "   * Indentation
 "   * Search
 "   * Swaps
@@ -220,6 +221,13 @@ nnoremap <leader>n :YcmCompleter GoToReferences<CR>
 " ---------
 
 set clipboard=unnamedplus
+
+" Folding
+" -------
+
+" no fold closed on start
+
+set foldlevelstart=99
 
 " Indention
 " ---------
