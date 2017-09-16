@@ -24,6 +24,7 @@
 "     * PythonMode
 "     * Riv
 "     * Syntastic
+"     * Tagbar
 "     * YouCompleteMe
 "
 " * Vim
@@ -158,10 +159,10 @@ nnoremap <C-n> :NERDTreeMirrorToggle<CR>
 
 let g:promptline_powerline_symbols = 0
 let g:promptline_preset = {
-    \'a' : [ promptline#slices#user() ],
-    \'b' : [ '\w' ],
-    \'c' : [ promptline#slices#vcs_branch() ],
-    \'y' : [ promptline#slices#python_virtualenv() ]}
+    \ 'a' : [ promptline#slices#user() ],
+    \ 'b' : [ '\w' ],
+    \ 'c' : [ promptline#slices#vcs_branch() ],
+    \ 'y' : [ promptline#slices#python_virtualenv() ]}
 
 " PythonMode
 " ^^^^^^^^^^
@@ -201,6 +202,11 @@ nnoremap <C-X> :SyntasticReset<CR>
 " close quick window with buffer at once
 
 cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
+
+" Tagbar
+" ^^^^^^
+
+nnoremap <F2> :TagbarToggle<CR>
 
 " YouCompleteMe
 " ^^^^^^^^^^^^^
