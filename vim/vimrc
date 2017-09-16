@@ -53,7 +53,7 @@ Plug 'jiangmiao/auto-pairs', {'commit': '3bd07a4'}
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Konfekt/FastFold'
 Plug 'majutsushi/tagbar'
-Plug 'roosta/srcery'
+Plug 'MaxSt/FlatColor'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -104,6 +104,15 @@ let g:airline#extensions#tabline#enabled = 1
 " ^^^^^^^^^
 
 let g:AutoPairsShortcutToggle='<F4>'
+
+" FlatColor
+" ^^^^^^^^^
+
+set termguicolors
+
+colorscheme flatcolor
+
+highlight LineNr guifg=#cbe3e7
 
 " GitGutter
 " ^^^^^^^^^
@@ -166,15 +175,6 @@ let g:pymode_virtualenv = 0
 
 let g:riv_fold_level = 1
 let g:riv_section_levels = '*=-^"'''
-
-" Srcery
-" ^^^^^^
-
-set termguicolors
-
-let g:srcery_underline = 0
-
-colorscheme srcery
 
 " Syntastic
 " ^^^^^^^^^
