@@ -33,6 +33,7 @@
 
 apt_packages=(
   cmake
+  exuberant-ctags
   git
   python3-pip
   tidy
