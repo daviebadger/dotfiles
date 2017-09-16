@@ -283,10 +283,13 @@ autocmd BufWinLeave * call clearmatches()
 " Window
 " ------
 
-set number
+set number relativenumber
 set colorcolumn=80
 
 set nowrap
 
 set splitbelow
 set splitright
+
+autocmd InsertEnter * set norelativenumber
+autocmd InsertLeave * set relativenumber
