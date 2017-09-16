@@ -15,6 +15,7 @@
 "
 "     * Airline
 "     * AutoPairs
+"     * FlatColor
 "     * GitGutter
 "     * NERDCommenter
 "     * NERDTree
@@ -22,7 +23,6 @@
 "     * Promptline
 "     * PythonMode
 "     * Riv
-"     * Srcery
 "     * Syntastic
 "     * YouCompleteMe
 "
