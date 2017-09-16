@@ -55,10 +55,10 @@ gem install ${gem_packages[@]}
 # ^^^
 
 pip_packages=(
-  docutils
   flake8
   mypy
   pylint
+  sphinx
   virtualenv
   virtualenvwrapper
 )
