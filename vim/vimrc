@@ -47,7 +47,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
-Plug 'bling/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'edkolev/promptline.vim'
@@ -58,10 +57,11 @@ Plug 'majutsushi/tagbar'
 Plug 'MaxSt/FlatColor'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme', {'do': 'sudo python3 install.py'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-syntastic/syntastic'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " CSS
@@ -82,12 +82,12 @@ Plug 'vim-scripts/matchit.zip'
 " Python
 " ^^^^^^
 
-Plug 'klen/python-mode'
+Plug 'python-mode/python-mode'
 
 " RST
 " ^^^
 
-Plug 'rykka/instantrst'
+Plug 'Rykka/instantrst'
 Plug 'Rykka/riv.vim'
 
 call plug#end()
