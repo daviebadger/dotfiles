@@ -214,7 +214,7 @@ cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdele
 " Tagbar
 " ^^^^^^
 
-nnoremap <F2> :TagbarToggle<CR>
+nnoremap <F2> :TagbarOpenAutoClose<CR>
 
 " YouCompleteMe
 " ^^^^^^^^^^^^^
