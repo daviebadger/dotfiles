@@ -119,8 +119,7 @@ set termguicolors
 
 colorscheme flatcolor
 
-highlight LineNr guifg=#cbe3e7
-highlight MatchParen guifg=#c991e1 gui=bold
+highlight LineNr ctermfg=253 guifg=#cbe3e7
 
 " GitGutter
 " ^^^^^^^^^
