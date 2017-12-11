@@ -140,6 +140,7 @@ cd git
 cp gitconfig ~/.gitconfig
 cp gitignore ~/.gitignore
 
+ln -f ~/.gitconfig gitconfig
 ln -f ~/.gitignore gitignore
 
 cd ..
@@ -152,6 +153,14 @@ cd vim
 cp vimrc ~/.vimrc
 ln -f ~/.vimrc vimrc
 
-mkdir ~/.vimrc/swaps/
+mkdir ~/.vim/snippets/
+mkdir ~/.vim/swaps/
+
+cp snippets/* ~/.vim/snippets/
+
+for file in ~/.vim/snippets/*
+do
+  ln -f $file snippets/$(basename "$file")
+done
 
 cd ..
