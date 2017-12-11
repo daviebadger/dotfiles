@@ -26,6 +26,7 @@
 "     * Riv
 "     * Syntastic
 "     * Tagbar
+"     * UltiSnips
 "     * YouCompleteMe
 "
 " * Vim
@@ -57,6 +58,7 @@ Plug 'majutsushi/tagbar'
 Plug 'MaxSt/FlatColor'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme', {'do': 'sudo python3 install.py'}
@@ -214,6 +216,16 @@ cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdele
 " ^^^^^^
 
 nnoremap <F2> :TagbarOpenAutoClose<CR>
+
+" UltiSnips
+" ^^^^^^^^^
+
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsJumpForwardTrigger="<C-l>"
+let g:UltiSnipsJumpBackwardTrigger="<C-h>"
+
+let g:UltiSnipsEditSplit="horizontal"
+let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 
 " YouCompleteMe
 " ^^^^^^^^^^^^^
