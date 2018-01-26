@@ -268,6 +268,7 @@ set tabstop=4
 autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd Filetype css setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType json setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType rst setlocal shiftwidth=3 softtabstop=3 tabstop=3
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
