@@ -1,0 +1,4 @@
+source ~/.profile
+source ~/.shell_prompt.sh
+
+export PATH="$HOME/.local/bin:$PATH"
