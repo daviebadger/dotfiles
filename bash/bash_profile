@@ -1,3 +1,7 @@
+# nOTE:
+#
+# Set terminal to run commands as a login shell.
+
 source ~/.profile
 source ~/.shell_prompt.sh
 
