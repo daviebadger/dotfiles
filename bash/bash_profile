@@ -19,7 +19,7 @@ export PIPENV_VENV_IN_PROJECT=true
 # =================
 
 export WORKON_HOME="$HOME/.virtualenvs"
-export PROJECT_HOME="$HOME/gitlab"
+export PROJECT_HOME="$HOME/github"
 export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3"
 
 source $HOME/.local/bin/virtualenvwrapper.sh
