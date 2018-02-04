@@ -5,4 +5,39 @@
 source ~/.profile
 source ~/.shell_prompt.sh
 
+# Executables
+# ===========
+
 export PATH="$HOME/.local/bin:$PATH"
+
+# Pipenv
+# ======
+
+export PIPENV_VENV_IN_PROJECT=true
+
+# Virtualenvwrapper
+# =================
+
+export WORKON_HOME="$HOME/.virtualenvs"
+export PROJECT_HOME="$HOME/gitlab"
+export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3"
+
+source $HOME/.local/bin/virtualenvwrapper.sh
+
+activate_venv() {
+  if [ -e ".venv" ]; then
+    if [ -f ".venv" ]; then
+      workon "$(cat .venv)"
+    else
+      pipenv shell
+    fi
+  fi
+}
+
+activate_venv
+
+function cd {
+  builtin cd "$@"
+
+  activate_venv
+}
