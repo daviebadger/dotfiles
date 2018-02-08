@@ -16,11 +16,9 @@
 #
 # * Environment
 #
-#   * Configuration
-#
-#     * Bash
-#     * Git
-#     * Vim
+#   * Bash
+#   * Git
+#   * Vim
 
 # Installation
 # ============
@@ -36,6 +34,7 @@ apt_packages=(
   exuberant-ctags
   git
   python3-pip
+  silversearcher-ag
   tidy
   vim-gnome
 )
@@ -57,13 +56,14 @@ gem install ${gem_packages[@]}
 pip_packages=(
   flake8
   mypy
+  pipenv
   pylint
   sphinx
   virtualenv
   virtualenvwrapper
 )
 
-pip3 install ${pip_packages[@]}
+pip3 install --user ${pip_packages[@]}
 
 # Scripts
 # -------
@@ -71,30 +71,29 @@ pip3 install ${pip_packages[@]}
 # InstantRst
 # ^^^^^^^^^^
 
-pip3 install https://github.com/Rykka/instant-rst.py/archive/master.zip
+pip3 install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 
 # MEGA
 # ^^^^
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_17.04/amd64/megasync-xUbuntu_17.04_amd64.deb
-wget https://mega.nz/linux/MEGAsync/xUbuntu_17.04/amd64/nautilus-megasync-xUbuntu_17.04_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/megasync-xUbuntu_17.10_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/nautilus-megasync-xUbuntu_17.10_amd64.deb
 
 apt install -y libc-ares2 libcrypto++6
 
-dpkg -i megasync-xUbuntu_17.04_amd64.deb
-dpkg -i nautilus-megasync-xUbuntu_17.04_amd64.deb
+dpkg -i megasync-xUbuntu_17.10_amd64.deb
+dpkg -i nautilus-megasync-xUbuntu_17.10_amd64.deb
 
-rm megasync-xUbuntu_17.04_amd64.deb
-rm nautilus-megasync-xUbuntu_17.04_amd64.deb
+rm megasync-xUbuntu_17.10_amd64.deb
+rm nautilus-megasync-xUbuntu_17.10_amd64.deb
 
 # PowerlineFonts
 # ^^^^^^^^^^^^^^
 
 git clone https://github.com/powerline/fonts.git --depth=1
 
-cd fonts
-./install.sh
-cd ..
+./fonts/install.sh
+
 rm -rf fonts
 
 # VimPlug
@@ -105,62 +104,39 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # Environment
 # ===========
 
-# Configuration
-# -------------
-
-mkdir github
-cd github
-
-git clone https://github.com/daviebadger/configs.git
-
-cd configs
-
 # Bash
-# ^^^^
+# ----
 
-cd bash
+cp bash/bash_aliases ~/.bash_aliases
+cp bash/bash_profile ~/.bash_profile
+cp bash/shell_prompt.sh ~/.shell_prompt.sh
 
-cp bash_aliases ~/.bash_aliases
-cp shell_prompt.sh ~/.shell_prompt.sh
+ln -f ~/.bash_aliases bash/bash_aliases
+ln -f ~/.bash_profile bash/bash_profile
+ln -f ~/.shell_prompt.sh bash/shell_prompt.sh
 
-ln -f ~/.bash_aliases bash_aliases
-ln -f ~/.shell_prompt.sh shell_prompt.sh
-
-cat < bashrc >> ~/.bashrc
-
-source ~/.bashrc
-
-cd ..
+source ~/.bash_profile
 
 # Git
-# ^^^
+# ---
 
-cd git
+cp git/gitconfig ~/.gitconfig
 
-cp gitconfig ~/.gitconfig
-cp gitignore ~/.gitignore
-
-ln -f ~/.gitconfig gitconfig
-ln -f ~/.gitignore gitignore
-
-cd ..
+ln -f ~/.gitconfig git/gitconfig
 
 # Vim
-# ^^^
+# ---
 
-cd vim
+cp vim/vimrc ~/.vimrc
 
-cp vimrc ~/.vimrc
-ln -f ~/.vimrc vimrc
+ln -f ~/.vimrc vim/vimrc
 
 mkdir ~/.vim/snippets/
 mkdir ~/.vim/swaps/
 
-cp snippets/* ~/.vim/snippets/
+cp vim/snippets/* ~/.vim/snippets/
 
 for file in ~/.vim/snippets/*
 do
   ln -f $file snippets/$(basename "$file")
 done
-
-cd ..
