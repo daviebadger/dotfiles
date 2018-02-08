@@ -13,6 +13,7 @@
 "
 "   * Settings
 "
+"     * Ack
 "     * Airline
 "     * AutoPairs
 "     * ChallengerDeep
@@ -57,6 +58,7 @@ Plug 'jiangmiao/auto-pairs', {'commit': '3bd07a4'}
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Konfekt/FastFold'
 Plug 'majutsushi/tagbar'
+Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'SirVer/ultisnips'
@@ -99,6 +101,18 @@ call plug#end()
 
 " Settings
 " --------
+
+" Ack
+" ^^^
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+" do not jump immediately to the first result
+
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
 
 " Airline
 " ^^^^^^^
