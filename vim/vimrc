@@ -16,6 +16,7 @@
 "     * Airline
 "     * AutoPairs
 "     * ChallengerDeep
+"     * ComfortableMotion
 "     * CtrlP
 "     * GitGutter
 "     * NERDCommenter
@@ -65,6 +66,7 @@ Plug 'valloric/youcompleteme', {'do': 'sudo python3 install.py'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'yuttie/comfortable-motion.vim'
 
 " CSS
 " ^^^
@@ -117,6 +119,12 @@ set termguicolors
 colorscheme challenger_deep
 
 highlight LineNr ctermfg=253 guifg=#cbe3e7
+
+" ComfortableMotion
+" ^^^^^^^^^^^^^^^^^
+
+let g:comfortable_motion_scroll_down_key = "j"
+let g:comfortable_motion_scroll_up_key = "k"
 
 " CtrlP
 " ^^^^^
