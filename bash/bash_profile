@@ -5,8 +5,16 @@
 source ~/.profile
 source ~/.shell_prompt.sh
 
-# Executables
-# ===========
+# Pyenv
+# =====
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# Python
+# ======
 
 export PATH="$HOME/.local/bin:$PATH"
 
