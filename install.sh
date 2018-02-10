@@ -30,6 +30,7 @@
 # ^^^
 
 apt_packages=(
+  build-essential
   cmake
   exuberant-ctags
   git
