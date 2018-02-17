@@ -178,7 +178,7 @@ let NERDTreeShowHidden = 1
 
 set wildignore+=build
 set wildignore+=dist
-set wildignore+=egg-info
+set wildignore+=*egg-info
 set wildignore+=__pycache__
 set wildignore+=.git
 set wildignore+=.mypy_cache
