@@ -34,6 +34,7 @@
 "
 "   * Clipboard
 "   * Folding
+"   á Keyboard
 "   * Indentation
 "   * Search
 "   * Swaps
@@ -277,6 +278,13 @@ set clipboard=unnamedplus
 " no fold closed on start
 
 set foldlevelstart=99
+
+" Keyboard
+" --------
+
+" speed up ESC to NORMAL mode
+
+set timeoutlen=1000 ttimeoutlen=0
 
 " Indention
 " ---------
