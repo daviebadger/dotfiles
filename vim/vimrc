@@ -168,6 +168,9 @@ let g:NERDCustomDelimiters = {'python': { 'left': '#' }}
 
 let NERDTreeRespectWildIgnore = 1
 let NERDTreeShowHidden = 1
+let NERDTreeShowLineNumbers = 1
+
+autocmd FileType nerdtree setlocal relativenumber
 
 set wildignore+=build
 set wildignore+=dist
