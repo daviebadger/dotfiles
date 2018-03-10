@@ -33,6 +33,7 @@
 " * Vim
 "
 "   * Clipboard
+"   * Commands
 "   * Folding
 "   * Keyboard
 "   * Indentation
@@ -274,6 +275,16 @@ nnoremap <leader>n :YcmCompleter GoToReferences<CR>
 " ---------
 
 set clipboard=unnamedplus
+
+" Commands
+" --------
+
+:command Q q
+:command Qa qall
+:command W w
+:command Wa wall
+:command Wq wq
+:command Wqa wqall
 
 " Folding
 " -------
