@@ -56,6 +56,7 @@ gem install ${gem_packages[@]}
 
 pip_packages=(
   flake8
+  ipdb
   mypy
   pipenv
   pylint
