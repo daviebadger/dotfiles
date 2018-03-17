@@ -279,12 +279,13 @@ set clipboard=unnamedplus
 " Commands
 " --------
 
-:command Q q
-:command Qa qall
-:command W w
-:command Wa wall
-:command Wq wq
-:command Wqa wqall
+cnoreabbrev Bd bd
+cnoreabbrev Q q
+cnoreabbrev Qa qall
+cnoreabbrev W w
+cnoreabbrev Wa wall
+cnoreabbrev Wq wq
+cnoreabbrev Wqa wqall
 
 " Folding
 " -------
