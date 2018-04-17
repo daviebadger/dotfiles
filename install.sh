@@ -10,6 +10,7 @@
 #
 #   * Scripts
 #
+#     * InstantRst
 #     * MEGA
 #     * PowerlineFonts
 #     * VimPlug
