@@ -83,10 +83,20 @@ pip3 install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/megasync-xUbuntu_17.10_amd64.deb
 wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/nautilus-megasync-xUbuntu_17.10_amd64.deb
 
-apt install -y libc-ares2 libcrypto++6
+mega_packages=(
+  libcanberra-gtk-module
+  libc-ares2
+  libcrypto++6
+  libmediainfo0v5
+  libmms0
+  libtinyxml2-6
+  libzen0v5
+)
 
-dpkg -i megasync-xUbuntu_17.10_amd64.deb
-dpkg -i nautilus-megasync-xUbuntu_17.10_amd64.deb
+sudo apt install -y ${mega_packages[@]}
+
+sudo dpkg -i megasync-xUbuntu_17.10_amd64.deb
+sudo dpkg -i nautilus-megasync-xUbuntu_17.10_amd64.deb
 
 rm megasync-xUbuntu_17.10_amd64.deb
 rm nautilus-megasync-xUbuntu_17.10_amd64.deb
