@@ -35,12 +35,13 @@ apt_packages=(
   exuberant-ctags
   git
   python3-pip
+  ruby
   silversearcher-ag
   tidy
   vim-gnome
 )
 
-apt install -y ${apt_packages[@]}
+sudo apt install -y ${apt_packages[@]}
 
 # gem
 # ^^^
@@ -49,7 +50,7 @@ gem_packages=(
   mdl
 )
 
-gem install ${gem_packages[@]}
+sudo gem install ${gem_packages[@]}
 
 # pip
 # ^^^
