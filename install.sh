@@ -80,6 +80,10 @@ pip3 install --user https://github.com/Rykka/instant-rst.py/archive/master.zip
 # MEGA
 # ^^^^
 
+# TODO:
+#
+# Change links to 18.04 version.
+
 wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/megasync-xUbuntu_17.10_amd64.deb
 wget https://mega.nz/linux/MEGAsync/xUbuntu_17.10/amd64/nautilus-megasync-xUbuntu_17.10_amd64.deb
 
