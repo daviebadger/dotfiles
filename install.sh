@@ -151,7 +151,7 @@ cp vim/snippets/* ~/.vim/snippets/
 
 for file in ~/.vim/snippets/*
 do
-  ln -f $file snippets/$(basename "$file")
+  ln -f $file vim/snippets/$(basename "$file")
 done
 
 # Go home at the end of this script
