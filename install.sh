@@ -107,6 +107,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # Environment
 # ===========
 
+mkdir github
+cd github
+
+git clone https://github.com/daviebadger/cookiecutter-python
+git clone https://github.com/daviebadger/dotfiles
+git clone https://github.com/daviebadger/notes
+
+cd dotfiles
+
 # Bash
 # ----
 
@@ -143,3 +152,7 @@ for file in ~/.vim/snippets/*
 do
   ln -f $file snippets/$(basename "$file")
 done
+
+# Go home at the end of this script
+
+cd
