@@ -35,6 +35,11 @@ apt_packages=(
   cmake
   exuberant-ctags
   git
+  libbz2-dev
+  libreadline-dev
+  libssl-dev
+  libssl1.0-dev
+  libsqlite3-dev
   python3-pip
   ruby
   silversearcher-ag
@@ -128,6 +133,8 @@ cd github
 git clone https://github.com/daviebadger/cookiecutter-python
 git clone https://github.com/daviebadger/dotfiles
 git clone https://github.com/daviebadger/notes
+
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 cd dotfiles
 
