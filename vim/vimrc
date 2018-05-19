@@ -319,6 +319,11 @@ autocmd FileType rst setlocal shiftwidth=3 softtabstop=3 tabstop=3
 autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
+" Mouse
+" -----
+
+set mouse=a
+
 " Search
 " ------
 
