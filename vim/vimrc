@@ -211,7 +211,9 @@ let g:pymode_virtualenv = 0
 " Riv
 " ^^^
 
+let g:riv_disable_indent = 1
 let g:riv_fold_level = 1
+let g:riv_fold_info_pos = 'left'
 let g:riv_section_levels = '*=-^"'''
 
 " Syntastic
