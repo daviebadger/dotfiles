@@ -42,7 +42,6 @@ apt_packages=(
   libsqlite3-dev
   python3-pip
   ruby
-  silversearcher-ag
   tidy
   vim-gnome
 )
