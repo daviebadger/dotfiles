@@ -1,6 +1,8 @@
 # Dotfiles
 
-My personal configuration files on Ubuntu Budgie desktop.
+My personal configuration files for [Ubuntu Budgie](Ubuntu Budgie) desktop.
+
+[Ubuntu Budgie]: https://ubuntubudgie.org/
 
 ## Installation
 
