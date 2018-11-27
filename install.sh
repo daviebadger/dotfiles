@@ -41,6 +41,7 @@ apt_packages=(
   libssl1.0-dev
   libsqlite3-dev
   python3-pip
+  jq
   ruby
   tidy
   vim-gnome
