@@ -1,0 +1,24 @@
+Desktop:
+  Budgie:  # Ubuntu flavour, version 18.10
+    Welcome:
+      Language: English
+    Keyboard:
+      Layout: Czech - Czech (QWERTY, extended backslash)
+    UpdatesAndOtherSoftware:
+      Installation: normal  # Web browser, utilities, office software, games and media players
+      OtherOptions:
+        DownloadUpdatesWhileInstalling: true
+        InstallThirdPartySoftware: true  # Graphics, Wi-Fi hardware and additional media formats
+    InstallationType:
+      EraseDisk: true
+      EncryptTheNewUbuntu: true
+      UseLVM: true  # Logical Volume Management
+    DiskEncryption:
+      OverwriteEmptyDiskSpace: true
+    Location: Prague  # Time zone
+    User:
+      Name: Davie
+      ComputerName: badger
+      Username: davie
+      LogInAutomatically: false
+      RequireMyPasswordToLogIn: true
