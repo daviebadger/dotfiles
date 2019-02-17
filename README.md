@@ -1,4 +1,4 @@
-# Dotfiles
+# Davie's dotfiles
 
 My personal configuration files for [Ubuntu Budgie][Ubuntu Budgie] desktop.
 
