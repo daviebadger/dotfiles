@@ -1,0 +1,21 @@
+[/]
+copy-on-select=false
+terminal-title-style='none'
+app-title='${directory}'
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+foreground-color='#FFFFFF'
+visible-name='Default'
+login-shell=true
+palette=['#616161', '#FF1744', '#00E676', '#FFFF00', '#00B0FF', '#E040FB', '#18FFFF', '#FFFFFF', '#616161', '#FF1744', '#00E676', '#FFFF00', '#00B0FF', '#E040FB', '#18FFFF', '#FFFFFF']
+badge-color-set=false
+default-size-rows=33
+default-size-columns=85
+show-scrollbar=false
+use-system-font=false
+cursor-colors-set=false
+highlight-colors-set=false
+use-theme-colors=false
+bold-color-set=false
+font='Ubuntu Mono derivative Powerline 12'
+background-color='#000000'
