@@ -1,0 +1,35 @@
+{
+    "child": {
+        "child1": {
+            "directory": "\/home\/davie\/github\/notes",
+            "height": 771,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "691983fc-517a-4239-8df9-6cae920692aa",
+            "width": 960
+        },
+        "child2": {
+            "directory": "\/home\/davie\/github\/notes",
+            "height": 230,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "f8389b6e-cfd1-4fbd-a5c6-399e8959fc3d",
+            "width": 960
+        },
+        "orientation": 1,
+        "position": 76,
+        "ratio": 0.769461077844311392,
+        "type": "Paned"
+    },
+    "height": 1002,
+    "name": "Default",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "a820f5bc-a89a-4e77-a166-5e08be48e058",
+    "version": "1.0",
+    "width": 960
+}

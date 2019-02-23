@@ -1,0 +1,35 @@
+{
+    "child": {
+        "child1": {
+            "directory": "\/home\/davie\/github\/dotfiles",
+            "height": 771,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "aef31614-fa40-444e-a191-ca9a5ba330a0",
+            "width": 960
+        },
+        "child2": {
+            "directory": "\/home\/davie\/github\/dotfiles",
+            "height": 230,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
+            "type": "Terminal",
+            "uuid": "be2371a7-a3ec-4ff6-b700-e03627b0ef98",
+            "width": 960
+        },
+        "orientation": 1,
+        "position": 76,
+        "ratio": 0.769461077844311392,
+        "type": "Paned"
+    },
+    "height": 1002,
+    "name": "Default",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "bc3f0118-ff75-48a5-be21-ca951ef4f185",
+    "version": "1.0",
+    "width": 960
+}
