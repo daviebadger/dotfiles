@@ -1,0 +1,17 @@
+Desktop:  # Budgie Desktop app
+  Appearance:
+    Style:
+      Icons: Moka
+    Desktop:
+      DesktopIcons: false
+    Windows:
+      AttachModalDialogsToWindows: false
+  Panels:
+    TopPanel:
+      Settings:
+        Size: 40
+        Shadow: false
+  Session:
+    Autostart:
+      Remove:
+        - Plank
