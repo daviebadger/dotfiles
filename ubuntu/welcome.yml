@@ -1,0 +1,5 @@
+Welcome:  # Budgie Welcome app
+  DefaultSettings:
+    ArcDesign:
+      - Install theme
+      - Apply theme
