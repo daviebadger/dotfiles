@@ -38,7 +38,7 @@ Settings:
           - Shutdown system, SUPER + SHIFT + P, gnome-session-quit --power-off
           - Suspend system, SUPER + SHIFT + S, systemctl suspend
         Remove:
-          - Show/Hide Tilix Quake Console - F12  # For browser and Tilix
+          - Show/Hide Tilix Quake Console - F12  # May appear again as tilix-quake
   Details:
     DateAndTime:
       AutomaticTimeZone: true
