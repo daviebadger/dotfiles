@@ -1,4 +1,4 @@
-Settings:
+Settings:  # Settings app
   Network:  # Either Wi-Fi or wired connection
     IPv4:
       DNS:
