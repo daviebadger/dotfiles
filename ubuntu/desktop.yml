@@ -1,15 +1,34 @@
 Desktop:  # Budgie Desktop app
   Appearance:
     Style:
+      Widgets: Arc-Darker
       Icons: Moka
+      DarkTheme: true
+      BuiltInTheme: true
     Desktop:
       DesktopIcons: false
     Windows:
       AttachModalDialogsToWindows: false
   Panels:
     TopPanel:
+      Applets:
+        Start:
+          - Budgie Menu
+          - Icon Task List  # Pinned Firefox, Files, Calculator, Tilix
+        Center:
+          - Clock
+        End:
+          - System Tray
+          - Night Light
+          - Notifications
+          - Status Indicator
+          - Separator
+          - Spacer
+          - User Indicator
+          - Raven Trigger
       Settings:
         Size: 40
+        Transparency: None
         Shadow: false
   Session:
     Autostart:
