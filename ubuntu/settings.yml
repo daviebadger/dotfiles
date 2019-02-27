@@ -39,7 +39,8 @@ Settings:  # Settings app
           - Suspend system, SUPER + SHIFT + S, systemctl suspend
         Remove:
           - tilix-quake, F12
-          - Show/Hide Tilix Quake Console, F12
+          - Show/Hide Tilix Quake Console 1, ALT + Q
+          - Show/Hide Tilix Quake Console 2, F12
   Details:
     DateAndTime:
       AutomaticTimeZone: true
