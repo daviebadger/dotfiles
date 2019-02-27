@@ -3,3 +3,5 @@
 set -eux
 
 cp wallpaper.jpg ~/Pictures
+
+dconf load /com/solus-project/ < panel.dconf
