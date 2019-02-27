@@ -11,26 +11,21 @@ pinned-launchers=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ca
 size=40
 enable-shadow=false
 location='top'
-applets=['e798ce3a-3a0a-11e9-9084-5254004a1090', 'e798ce32-3a0a-11e9-9084-5254004a1090', 'e798ce2d-3a0a-11e9-9084-5254004a1090', 'e798ce39-3a0a-11e9-9084-5254004a1090', 'e798ce30-3a0a-11e9-9084-5254004a1090', 'e798ce38-3a0a-11e9-9084-5254004a1090', 'e798ce3d-3a0a-11e9-9084-5254004a1090', 'e798ce36-3a0a-11e9-9084-5254004a1090', 'e798ce3c-3a0a-11e9-9084-5254004a1090', 'e798ce35-3a0a-11e9-9084-5254004a1090', 'e798ce3b-3a0a-11e9-9084-5254004a1090', '7c9521dc-3a0c-11e9-abd9-5254004a1090']
+applets=['e798ce3a-3a0a-11e9-9084-5254004a1090', 'e798ce32-3a0a-11e9-9084-5254004a1090', 'e798ce2d-3a0a-11e9-9084-5254004a1090', 'e798ce39-3a0a-11e9-9084-5254004a1090', 'e798ce30-3a0a-11e9-9084-5254004a1090', 'e798ce38-3a0a-11e9-9084-5254004a1090', 'e798ce3d-3a0a-11e9-9084-5254004a1090', 'e798ce36-3a0a-11e9-9084-5254004a1090', 'e798ce3c-3a0a-11e9-9084-5254004a1090', 'e798ce3b-3a0a-11e9-9084-5254004a1090', '7c9521dc-3a0c-11e9-abd9-5254004a1090']
 transparency='none'
 
 [budgie-panel/applets/{e798ce39-3a0a-11e9-9084-5254004a1090}]
-position=4
+position=3
 alignment='end'
 name='Status Indicator'
 
-[budgie-panel/applets/{e798ce35-3a0a-11e9-9084-5254004a1090}]
-position=1
-alignment='end'
-name='Spacer'
-
 [budgie-panel/applets/{e798ce3a-3a0a-11e9-9084-5254004a1090}]
-position=5
+position=4
 alignment='end'
 name='Separator'
 
 [budgie-panel/applets/{e798ce3c-3a0a-11e9-9084-5254004a1090}]
-position=7
+position=6
 alignment='end'
 name='User Indicator'
 
@@ -40,17 +35,17 @@ alignment='start'
 name='Icon Task List'
 
 [budgie-panel/applets/{e798ce38-3a0a-11e9-9084-5254004a1090}]
-position=3
+position=2
 alignment='end'
 name='Notifications'
 
 [budgie-panel/applets/{e798ce3d-3a0a-11e9-9084-5254004a1090}]
-position=8
+position=7
 alignment='end'
 name='Raven Trigger'
 
 [budgie-panel/applets/{e798ce36-3a0a-11e9-9084-5254004a1090}]
-position=2
+position=1
 alignment='end'
 name='Night Light'
 
@@ -65,7 +60,7 @@ alignment='end'
 name='System Tray'
 
 [budgie-panel/applets/{e798ce3b-3a0a-11e9-9084-5254004a1090}]
-position=6
+position=5
 alignment='end'
 name='Spacer'
 
