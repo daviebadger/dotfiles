@@ -30,7 +30,6 @@ Settings:  # Settings app
   Devices:
     Displays:
       NightLight: true
-      Schedule: Sunset to Sunrise
     Keyboard:
       CustomShortcuts:
         Add:
@@ -38,7 +37,6 @@ Settings:  # Settings app
           - Shutdown system, SUPER + SHIFT + P, gnome-session-quit --power-off
           - Suspend system, SUPER + SHIFT + S, systemctl suspend
         Remove:
-          - tilix-quake, F12
           - Show/Hide Tilix Quake Console 1, ALT + Q
           - Show/Hide Tilix Quake Console 2, F12
   Details:
