@@ -12,3 +12,6 @@ dconf load /com/solus-project/budgie-panel/ < "${UBUNTU_SETTINGS}/panel.dconf"
 dconf load /org/gnome/desktop/ <<< "$(sed "s/davie/${USER}/" "${UBUNTU_SETTINGS}/desktop.dconf")"
 dconf load /org/gnome/mutter/ < "${UBUNTU_SETTINGS}/mutter.dconf"
 dconf load /org/gnome/settings-daemon/plugins/ < "${UBUNTU_SETTINGS}/plugins.dconf"
+
+dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/budgie-tilix-quake1/
+dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/budgie-tilix-quake2/
