@@ -17,6 +17,7 @@ secondary-color='#000000000000'
 
 [privacy]
 remove-old-temp-files=true
+remember-recent-files=false
 remove-old-trash-files=true
 
 [datetime]
