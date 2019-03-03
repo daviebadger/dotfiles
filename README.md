@@ -1,6 +1,6 @@
 # Davie's dotfiles
 
-My personal configuration files for [Ubuntu Budgie][Ubuntu Budgie] desktop.
+My personal configuration files for [Ubuntu Budgie 18.10][Ubuntu Budgie] desktop.
 
 [Ubuntu Budgie]: https://ubuntubudgie.org/
 
