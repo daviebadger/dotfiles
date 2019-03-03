@@ -1,0 +1,9 @@
+SoftwareUpdater:  # Software Updater app
+  Settings:
+    UbuntuSoftware:
+      DownloadFrom: Main server
+    OtherSoftware:
+      CanonicalPartners: true
+      CanonicalPartnersSourceCode: true
+    Updates:
+      AutomaticallyCheckForUpdates: weekly
