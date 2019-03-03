@@ -19,6 +19,8 @@ Settings:  # Settings app
     NotificationPopups: false
     LockScreenNotifications: false
   Privacy:
+    UsageAndHistory:
+      RecentlyUsed: false
     PurgeTrashAndTemporaryFiles:
       AutomaticallyEmptyTrash: true
       AutomaticallyPurgeTemporaryFiles: true
