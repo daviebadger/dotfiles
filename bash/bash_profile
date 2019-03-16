@@ -3,7 +3,6 @@
 # Set terminal to run commands as a login shell.
 
 source ~/.profile
-source ~/.shell_prompt.sh
 
 # Disable freezing the terminal by CTRL+S shortcut in an interactive shell
 
