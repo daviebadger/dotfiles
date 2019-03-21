@@ -22,7 +22,6 @@
 "     * NERDCommenter
 "     * NERDTree
 "     * NERDTreeTabs
-"     * Promptline
 "     * PythonMode
 "     * Riv
 "     * Syntastic
@@ -54,7 +53,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'challenger-deep-theme/vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'edkolev/promptline.vim'
 Plug 'jiangmiao/auto-pairs', {'commit': '3bd07a4'}
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Konfekt/FastFold'
@@ -194,16 +192,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 nnoremap <C-m> :NERDTreeFocusToggle<CR>
 nnoremap <C-n> :NERDTreeMirrorToggle<CR>
-
-" Promptline
-" ^^^^^^^^^^
-
-let g:promptline_powerline_symbols = 0
-let g:promptline_preset = {
-    \ 'a' : [ promptline#slices#user() ],
-    \ 'b' : [ '\w' ],
-    \ 'c' : [ promptline#slices#vcs_branch() ],
-    \ 'y' : [ promptline#slices#python_virtualenv() ]}
 
 " PythonMode
 " ^^^^^^^^^^
