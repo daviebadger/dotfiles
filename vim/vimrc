@@ -159,10 +159,12 @@ set updatetime=250
 let g:NERDDefaultAlign = 'left'
 
 let g:NERDCommentEmptyLines = 1
+let g:NERDCompactSexyComns = 1
 let g:NERDSpaceDelims = 1
+let g:NERDToggleCheckAllLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
-let g:NERDCustomDelimiters = {'python': { 'left': '#' }}
+let g:NERDCustomDelimiters = {'python': {'left': '#'}}
 
 " NERDTree
 " ^^^^^^^^
