@@ -1,6 +1,8 @@
+#!/bin/bash
+
 # NOTE:
 #
-# Set terminal to run commands as a login shell.
+# Set the terminal to run commands as a login shell.
 
 source ~/.profile
 
