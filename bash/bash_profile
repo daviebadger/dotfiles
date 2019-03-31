@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# NOTE:
-#
-# Set the terminal to run commands as a login shell.
-
-source ~/.profile
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
 
 # Disable freezing the terminal by CTRL+S shortcut in an interactive shell
 
-[[ $- == *i* ]] && stty -ixon
+if [[ $- == *i* ]]; then
+  stty -ixon
+fi
 
 # Pyenv
 # =====
