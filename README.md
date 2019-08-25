@@ -1,12 +1,18 @@
-# Davie's dotfiles
+# Davie's Dotfiles
 
-My personal configuration files for [Ubuntu Budgie 18.10][Ubuntu Budgie] desktop.
+My personal configuration files for [Ubuntu Budgie 18.10][Ubuntu Budgie]
+desktop.
 
 [Ubuntu Budgie]: https://ubuntubudgie.org/
 
 ## Credits
 
-* [Shadax](https://www.reddit.com/user/Shadax) for the modified [version](https://www.reddit.com/r/wallpapers/comments/413ecw/vacation_in_andromeda_galaxy/cyztyyz/) of original [Vacation In Andromeda Galaxy](https://www.reddit.com/r/wallpapers/comments/413ecw/vacation_in_andromeda_galaxy/) wallpaper
+* [Ari Weinkle][Ari Weinkle] for the [Spirals][Spirals] work, namely the
+  [Wallpaper 2B][Wallpaper 2B]
+
+[Ari Weinkle]: http://ariweinkle.com/info/
+[Spirals]: http://ariweinkle.com/work/spirals/
+[Wallpaper 2B]: https://drive.google.com/open?id=0B08Ro4V-3VhoN1JDS2d1MndSbzA
 
 ## License
 
