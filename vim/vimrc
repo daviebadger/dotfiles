@@ -64,7 +64,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme', {'do': 'sudo python3 install.py'}
+Plug 'ycm-core/YouCompleteMe', {'do': 'sudo python3 install.py'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -225,7 +225,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_markdown_checkers = ['mdl']
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_rst_checkers = ['sphinx']
+" let g:syntastic_rst_checkers = ['sphinx']
+let g:syntastic_rst_checkers = []
 
 nnoremap <F3> :SyntasticCheck<CR>
 nnoremap <C-X> :SyntasticReset<CR>
