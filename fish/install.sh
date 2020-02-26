@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# Install Fish, a user-friendly command line shell.
 
 sudo apt-add-repository --yes ppa:fish-shell/release-3
 sudo apt-get update
