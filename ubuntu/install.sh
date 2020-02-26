@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 readonly UBUNTU="$(dirname "$0")"
 readonly UBUNTU_SETTINGS="${UBUNTU}/settings"

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 for dir in ./*/; do
   echo "Installing $(basename ${dir}) ..."

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 readonly TILIX="$(dirname "$0")"
 readonly TILIX_SESSIONS="${TILIX}/sessions"
