@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+
+for dir in ./*/; do
+  echo "Installing $(basename ${dir}) ..."
+
+  source "${dir}/install.sh"
+done
+
+exit 0
+
 #
 # * Installation
 #
