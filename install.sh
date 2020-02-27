@@ -1,4 +1,21 @@
 #!/bin/bash
+#
+# Install all dotfiles, including system dependencies.
+
+# Install UbuntuMono Nerd Font with Powerline symbols and icons.
+
+echo "Installing fonts ..."
+
+curl -fsOSL https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip
+unzip -q UbuntuMono.zip -d _fonts/
+
+mkdir -p ~/.local/share/fonts/
+cp _fonts/* ~/.local/share/fonts/
+
+rm UbuntuMono.zip
+rm -r _fonts/
+
+# Install specific applications.
 
 for dir in ./*/; do
   echo "Installing $(basename ${dir}) ..."
@@ -21,7 +38,6 @@ exit 0
 #
 #     * InstantRst
 #     * MEGA
-#     * PowerlineFonts
 #     * VimPlug
 #
 # * Environment
@@ -118,15 +134,6 @@ sudo dpkg -i nautilus-megasync-xUbuntu_17.10_amd64.deb
 
 rm megasync-xUbuntu_17.10_amd64.deb
 rm nautilus-megasync-xUbuntu_17.10_amd64.deb
-
-# PowerlineFonts
-# ^^^^^^^^^^^^^^
-
-git clone https://github.com/powerline/fonts.git --depth=1
-
-./fonts/install.sh
-
-rm -rf fonts
 
 # VimPlug
 # ^^^^^^^
