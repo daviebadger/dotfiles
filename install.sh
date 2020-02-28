@@ -2,18 +2,19 @@
 #
 # Install all dotfiles, including system dependencies.
 
-# Install UbuntuMono Nerd Font with Powerline symbols and icons.
+# Install Cascadia Code Nerd Font with Powerline symbols and icons.
 
 echo "Installing fonts ..."
 
-curl -fsOSL https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip
-unzip -q UbuntuMono.zip -d _fonts/
+readonly FONT_ZIP='CascadiaCode.zip'
+readonly FONT_DIR="${HOME}/.local/share/fonts/"
 
-mkdir -p ~/.local/share/fonts/
-cp _fonts/* ~/.local/share/fonts/
+mkdir -p $FONT_DIR
 
-rm UbuntuMono.zip
-rm -r _fonts/
+curl -fsOSL "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/${FONT_ZIP}"
+unzip -q $FONT_ZIP -d $FONT_DIR
+
+rm $FONT_ZIP
 
 # Install specific applications.
 
