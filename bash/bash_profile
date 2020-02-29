@@ -4,6 +4,8 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+source ~/.shell_prompt.sh
+
 # Disable freezing the terminal by CTRL+S shortcut in an interactive shell
 
 if [[ $- == *i* ]]; then
