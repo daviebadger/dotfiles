@@ -10,4 +10,4 @@ sudo apt install install --yes alacritty
 
 sudo update-alternatives --set x-terminal-emulator /usr/bin/alacritty
 
-ln -fv "${LOCAL_DIR}/alacritty.yml" ~/.config/alacritty/alacritty.yml
+ln -f "${LOCAL_DIR}/alacritty.yml" ~/.config/alacritty/alacritty.yml
