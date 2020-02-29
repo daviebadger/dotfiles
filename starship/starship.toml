@@ -11,7 +11,7 @@ symbol = " "
 symbol = " "
 
 [python]
-#symbol = " "
+symbol = " "
 
 [rust]
 symbol = " "
