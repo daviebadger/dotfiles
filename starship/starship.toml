@@ -1,0 +1,17 @@
+[git_branch]
+symbol = " "
+
+[kubernetes]
+symbol = "ﴱ "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+#symbol = " "
+
+[rust]
+symbol = " "
