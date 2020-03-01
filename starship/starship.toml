@@ -4,6 +4,9 @@ symbol = ""
 use_symbol_for_status = true
 vicmd_symbol = ""
 
+[cmd_duration]
+min_time = 0
+
 [git_branch]
 symbol = " "
 
