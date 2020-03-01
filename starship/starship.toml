@@ -1,3 +1,9 @@
+[character]
+error_symbol = ""
+symbol = ""
+use_symbol_for_status = true
+vicmd_symbol = ""
+
 [git_branch]
 symbol = " "
 
