@@ -19,7 +19,7 @@ rm $FONT_ZIP
 # Install specific applications.
 
 for dir in ./*/; do
-  echo "Installing $(basename ${dir}) ..."
+  echo "Installing $(basename $dir) ..."
 
   source "${dir}/install.sh"
 done

@@ -2,7 +2,7 @@
 #
 # Install Starship, a cross-shell prompt.
 
-readonly LOCAL_DIR="$(dirname "${BASH_SOURCE}")"
+readonly LOCAL_DIR="$(dirname $BASH_SOURCE)"
 
 curl -fsSL https://starship.rs/install.sh | bash
 
