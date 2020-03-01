@@ -14,7 +14,7 @@ use_symbol_for_status = true
 vicmd_symbol = ""
 
 [cmd_duration]
-min_time = 0
+min_time = 1
 
 [git_branch]
 symbol = " "
