@@ -5,7 +5,7 @@ window:
 
 font:
   normal:
-    family: CaskaydiaCove Nerd Font Mono
+    family: UbuntuMono Nerd Font
 
   size: 12.0
 
@@ -35,6 +35,11 @@ colors:
     magenta: '0x906cff'
     cyan:    '0x63f2f1'
     white:   '0xa6b3cc'
+
+shell:
+  program: /usr/bin/fish
+  args:
+    - --login
 
 key_bindings:
   - { key: C,        mods: Control|Shift, action: Copy             }
