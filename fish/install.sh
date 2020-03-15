@@ -5,8 +5,8 @@
 readonly LOCAL_DIR="$(dirname $BASH_SOURCE)"
 
 sudo apt-add-repository --yes ppa:fish-shell/release-3
-sudo apt-get update
-sudo apt-get install --yes fish
+sudo apt update
+sudo apt install --yes fish
 
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
