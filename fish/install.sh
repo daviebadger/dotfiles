@@ -11,3 +11,5 @@ sudo apt install --yes fish
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
 ln -f "${LOCAL_DIR}/config.fish" ~/.config/fish/config.fish
+
+sudo chsh -s /usr/bin/fish
