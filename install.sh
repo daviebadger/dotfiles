@@ -4,9 +4,9 @@
 
 # Install UbuntuMono Nerd Font with Powerline symbols and icons.
 
-echo 'Installing fonts ...'
+echo "Installing fonts ..."
 
-readonly FONT_ZIP='UbuntuMono.zip'
+readonly FONT_ZIP="UbuntuMono.zip"
 readonly FONT_DIR="${HOME}/.local/share/fonts/"
 
 mkdir -p $FONT_DIR
