@@ -1,38 +1,38 @@
 [battery]
-charging_symbol = ' '
-discharging_symbol = ' '
-full_symbol = ' '
+charging_symbol = " "
+discharging_symbol = " "
+full_symbol = " "
 
 [[battery.display]]
-style = 'bold red'
+style = "bold red"
 threshold = 20
 
 [character]
-error_symbol = ''
-symbol = ''
+error_symbol = ""
+symbol = ""
 use_symbol_for_status = true
-vicmd_symbol = ''
+vicmd_symbol = ""
 
 [cmd_duration]
 min_time = 1
 
 [git_branch]
-symbol = ' '
+symbol = " "
 
 [jobs]
-symbol = ' '
+symbol = " "
 
 [kubernetes]
-symbol = 'ﴱ '
+symbol = "ﴱ "
 
 [nodejs]
-symbol = ' '
+symbol = " "
 
 [package]
-symbol = ' '
+symbol = " "
 
 [python]
-symbol = ' '
+symbol = " "
 
 [rust]
-symbol = ' '
+symbol = " "
