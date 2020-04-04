@@ -3,7 +3,7 @@
 # Install Alacritty, a GPU-accelerated terminal emulator.
 
 readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
-readonly DESTINATION_DIR="$HOME/.config/alacritty"
+readonly DESTINATION_DIR="${HOME}/.config/alacritty"
 
 sudo add-apt-repository --yes ppa:mmstick76/alacritty
 sudo apt update
