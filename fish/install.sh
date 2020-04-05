@@ -2,14 +2,12 @@
 #
 # Install Fish, a user-friendly command line shell.
 
-readonly LOCAL_DIR="$(dirname $BASH_SOURCE)"
+readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
+readonly DESTINATION_DIR="${HOME}/.config/fish"
 
-sudo apt-add-repository --yes ppa:fish-shell/release-3
-sudo apt update
-sudo apt install --yes fish
+sudo pacman -S --noconfirm fish
 
-curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+mkdir -p $DESTINATION_DIR
+ln -f "${SOURCE_DIR}/config.fish" $DESTINATION_DIR
 
-ln -f "${LOCAL_DIR}/config.fish" ~/.config/fish/config.fish
-
-sudo chsh -s /usr/bin/fish
+chsh -s /usr/bin/fish
