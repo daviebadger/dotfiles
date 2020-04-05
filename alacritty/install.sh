@@ -5,11 +5,7 @@
 readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
 readonly DESTINATION_DIR="${HOME}/.config/alacritty"
 
-sudo add-apt-repository --yes ppa:mmstick76/alacritty
-sudo apt update
-sudo apt install --yes alacritty
-
-sudo update-alternatives --set x-terminal-emulator /usr/bin/alacritty
+sudo pacman -S --noconfirm alacritty
 
 mkdir -p $DESTINATION_DIR
 ln -f "${SOURCE_DIR}/alacritty.yml" $DESTINATION_DIR
