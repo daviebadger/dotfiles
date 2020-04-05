@@ -1,6 +1,0 @@
-#!/bin/bash
-
-alias d="docker"
-alias g="git"
-alias rg="rg --colors 'path:style:bold' --colors 'path:fg:green' --colors 'line:style:bold' --colors 'line:fg:yellow'"
-alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
