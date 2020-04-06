@@ -2,10 +2,10 @@
 #
 # Install Starship, a cross-shell prompt.
 
-readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
-readonly DESTINATION_DIR="${HOME}/.config"
+readonly SOURCE_DIRECTORY="$(dirname $BASH_SOURCE)"
+readonly DESTINATION_DIRECTORY="${HOME}/.config"
 
-sudo bash -c "$(curl -fsLS https://starship.rs/install.sh)" -- -y
+sudo bash -c "$(curl --fail --location --silent https://starship.rs/install.sh)" -- --yes
 
-mkdir -p $DESTINATION_DIR
-ln -f "${SOURCE_DIR}/starship.toml" $DESTINATION_DIR
+mkdir --parents $DESTINATION_DIRECTORY
+ln --force "${SOURCE_DIRECTORY}/starship.toml" $DESTINATION_DIRECTORY
