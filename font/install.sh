@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# Install Hack Nerd Font with Powerline symbols and icons.
+# Install UbuntuMono Nerd Font with Powerline symbols and icons.
 
-readonly FONT_ZIP="Hack.zip"
-readonly FONT_DESTINATION_DIR="${HOME}/.local/share/fonts"
+readonly FONT_ZIP="UbuntuMono.zip"
+readonly FONT_DESTINATION_DIRECTORY="${HOME}/.local/share/fonts"
 
-curl -LO "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/${FONT_ZIP}"
+curl --location --remote-name "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/${FONT_ZIP}"
 
-mkdir -p $FONT_DESTINATION_DIR
-unzip -q $FONT_ZIP -d $FONT_DESTINATION_DIR
+mkdir --parents $FONT_DESTINATION_DIRECTORY
+unzip $FONT_ZIP -d $FONT_DESTINATION_DIRECTORY
 rm $FONT_ZIP
