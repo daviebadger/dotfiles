@@ -2,4 +2,4 @@
 #
 # Install Tmux, a terminal multiplexer.
 
-sudo pacman -S tmux
+sudo pacman --sync --noconfirm tmux
