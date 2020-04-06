@@ -2,14 +2,15 @@
 #
 # Install Fish, a user-friendly command line shell.
 
-readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
-readonly DESTINATION_DIR="${HOME}/.config/fish"
-readonly DESTINATION_DIR_FUNCTIONS="${DESTINATION_DIR}/functions"
+readonly SOURCE_DIRECTORY="$(dirname $BASH_SOURCE)"
+readonly DESTINATION_DIRECTORY="${HOME}/.config/fish"
+readonly DESTINATION_DIRECTORY_FUNCTIONS="${DESTINATION_DIRECTORY}/functions"
 
-sudo pacman -S --noconfirm fish
+sudo pacman --sync --noconfirm fish
 
-mkdir -p $DESTINATION_DIR $DESTINATION_DIR_FUNCTIONS
-ln -f "${SOURCE_DIR}/config.fish" $DESTINATION_DIR
-ln -f "${SOURCE_DIR}/functions/"* $DESTINATION_DIR_FUNCTIONS
+mkdir --parents $DESTINATION_DIRECTORY
+mkdir --parents $DESTINATION_DIRECTORY_FUNCTIONS
+ln --force "${SOURCE_DIRECTORY}/config.fish" $DESTINATION_DIRECTORY
+ln --force "${SOURCE_DIRECTORY}/functions/"* $DESTINATION_DIRECTORY_FUNCTIONS
 
-chsh -s /usr/bin/fish
+chsh --shell /usr/bin/fish
