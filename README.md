@@ -1,8 +1,10 @@
 # Davie's Dotfiles
 
-My configuration files for [Ubuntu Desktop 20.04][Ubuntu].
+My configuration files for [Manjaro Linux][Manjaro] ([Arch][Arch]-based
+distribution).
 
-[Ubuntu]: https://ubuntu.com/desktop
+[Manjaro]: https://manjaro.org/
+[Arch]: https://www.archlinux.org/
 
 ## License
 
