@@ -5,8 +5,8 @@ window:
 
 font:
   normal:
-    family: "Hack Nerd Font"
-  size: 12
+    family: "UbuntuMono Nerd Font"
+  size: 14
 
 colors:
   # https://github.com/challenger-deep-theme/alacritty/blob/master/challenger-deep.yml
