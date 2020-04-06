@@ -2,10 +2,10 @@
 #
 # Install Alacritty, a GPU-accelerated terminal emulator.
 
-readonly SOURCE_DIR="$(dirname $BASH_SOURCE)"
-readonly DESTINATION_DIR="${HOME}/.config/alacritty"
+readonly SOURCE_DIRECTORY="$(dirname $BASH_SOURCE)"
+readonly DESTINATION_DIRECTORY="${HOME}/.config/alacritty"
 
-sudo pacman -S --noconfirm alacritty
+sudo pacman --sync --noconfirm alacritty
 
-mkdir -p $DESTINATION_DIR
-ln -f "${SOURCE_DIR}/alacritty.yml" $DESTINATION_DIR
+mkdir --parents $DESTINATION_DIRECTORY
+ln --force "${SOURCE_DIRECTORY}/alacritty.yml" $DESTINATION_DIRECTORY
