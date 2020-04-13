@@ -1,7 +1,19 @@
 window:
   dimensions:
-    columns: 85  # Vim: up to 4-digit line numbers, 1 spacer, 80 characters
-    lines: 34  # Vim: 1 tab line, 30 lines, 1 status line, 1 command line; Tmux: 1 status line
+    # columns:
+    #   Vim:
+    #     - 6 columns for sign column
+    #     - 80 columns for characters
+    # lines:
+    #   Vim:
+    #     - 1 line for tab line
+    #     - 30 lines for file lines
+    #     - 1 line for status line
+    #     - 1 line for command line
+    #   Tmux:
+    #     - 1 line for status line
+    columns: 86
+    lines: 34
 
 font:
   normal:
