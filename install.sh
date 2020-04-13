@@ -1,13 +1,16 @@
 #!/bin/bash
 #
-# Install dotfiles, including system packages and applications.
+# Install all applications.
 
 set -eu
 
-readonly INSTALL="Installing %s ...\n"
+for directory in ./*/; do
+  script="${directory}/install.sh"
 
-for dir in ./*/; do
-  printf "${INSTALL}" $(basename $dir)
+  if [[ -f "${script}" ]]; then
+    echo "Installing $(basename "${directory}") ..."
 
-  source "${dir}/install.sh"
+    # shellcheck source=/dev/null
+    source "${script}"
+  fi
 done
