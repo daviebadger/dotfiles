@@ -1,10 +1,11 @@
 #!/bin/bash
+#
+# Install Neofetch, a command-line system information tool.
 
-readonly NEOFETCH="$(dirname "$0")"
+readonly SOURCE_DIRECTORY="$(dirname "${BASH_SOURCE[0]}")"
+readonly DESTINATION_DIRECTORY="${HOME}/.config/neofetch"
 
-set -eux
+sudo pacman --sync --noconfirm neofetch
 
-sudo apt install neofetch
-
-mkdir -p ~/.config/neofetch
-cp -fl "${NEOFETCH}/config.conf" ~/.config/neofetch/
+mkdir --parents "${DESTINATION_DIRECTORY}"
+ln --force "${SOURCE_DIRECTORY}/config.conf" "${DESTINATION_DIRECTORY}"
