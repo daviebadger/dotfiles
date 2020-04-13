@@ -1,10 +1,16 @@
 # Davie's Dotfiles
 
-My configuration files for [Manjaro Linux][Manjaro] ([Arch][Arch]-based
-distribution).
+My configuration files for [Manjaro Linux][Manjaro].
 
 [Manjaro]: https://manjaro.org/
-[Arch]: https://www.archlinux.org/
+
+## Installation
+
+```
+$ git clone https://github.com/daviebadger/dotfiles github/dotfiles
+$ cd github/dotfiles
+$ ./install.sh
+```
 
 ## License
 
