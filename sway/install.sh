@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# Install i3-gaps, a tiling window manager with gaps.
+# Install Sway, an i3-compatible Wayland compositor.
 
 readonly SOURCE_DIRECTORY="$(dirname "${BASH_SOURCE[0]}")"
-readonly DESTINATION_DIRECTORY="${HOME}/.config/i3"
+readonly DESTINATION_DIRECTORY="${HOME}/.config/sway"
 
-sudo pacman --sync --noconfirm i3-gaps
+sudo pacman --sync --noconfirm sway
 
 mkdir --parents "${DESTINATION_DIRECTORY}"
 ln --force "${SOURCE_DIRECTORY}/config" "${DESTINATION_DIRECTORY}"
