@@ -6,7 +6,7 @@ set $up    k
 set $right l
 
 set $workspace1 1
-set $worskpace2 2
+set $workspace2 2
 set $workspace3 3
 set $workspace4 4
 set $workspace5 5
