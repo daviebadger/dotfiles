@@ -1,8 +1,6 @@
 # Davie's Dotfiles
 
-My configuration files for [Manjaro Linux][Manjaro].
-
-[Manjaro]: https://manjaro.org/
+My configuration files for software I have been using.
 
 ## Installation
 
