@@ -50,4 +50,6 @@ bindsym $mod+Shift+$right move right
 
 bindsym $mod+Return exec alacritty
 
-include /etc/sway/config.d/
+output * bg ~/.config/sway/wallhaven-j5wd8p_1920x1080.png
+
+include /etc/sway/config.d/*
