@@ -49,3 +49,5 @@ bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
 bindsym $mod+Return exec alacritty
+
+include /etc/sway/config.d/
