@@ -16,28 +16,6 @@ set $workspace8 8
 set $workspace9 9
 set $workspace0 0
 
-bindsym $mod+plus   workspace $workspace1
-bindsym $mod+ecaron workspace $workspace2
-bindsym $mod+scaron workspace $workspace3
-bindsym $mod+ccaron workspace $workspace4
-bindsym $mod+rcaron workspace $workspace5
-bindsym $mod+zcaron workspace $workspace6
-bindsym $mod+yacute workspace $workspace7
-bindsym $mod+aacute workspace $workspace8
-bindsym $mod+iacute workspace $workspace9
-bindsym $mod+eacute workspace $workspace0
-
-bindsym $mod+Shift+plus   move container to workspace $workspace1
-bindsym $mod+Shift+ecaron move container to workspace $workspace2
-bindsym $mod+Shift+scaron move container to workspace $workspace3
-bindsym $mod+Shift+ccaron move container to workspace $workspace4
-bindsym $mod+Shift+rcaron move container to workspace $workspace5
-bindsym $mod+Shift+zcaron move container to workspace $workspace6
-bindsym $mod+Shift+yacute move container to workspace $workspace7
-bindsym $mod+Shift+aacute move container to workspace $workspace8
-bindsym $mod+Shift+iacute move container to workspace $workspace9
-bindsym $mod+Shift+eacute move container to workspace $workspace0
-
 bindsym $mod+$left  focus left
 bindsym $mod+$down  focus down
 bindsym $mod+$up    focus up
