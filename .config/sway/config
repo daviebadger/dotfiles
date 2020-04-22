@@ -16,7 +16,13 @@ set $workspace8 "8"
 set $workspace9 "9"
 set $workspace0 "10"
 
-output * bg ~/.config/sway/wallhaven-j5wd8p_1920x1080.png
+input type:keyboard {
+    xkb_layout  "cz"
+    xkb_model   "pc105"
+    xkb_variant "qwerty_bksl"
+}
+
+output * background ~/.config/sway/wallhaven-j5wd8p_1920x1080.png
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
