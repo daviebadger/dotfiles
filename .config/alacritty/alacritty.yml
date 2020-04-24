@@ -45,6 +45,8 @@ colors:
     cyan:    "#38d9a9"
     white:   "#dee2e6"
 
+background_opacity: 0.975
+
 key_bindings:
   - { "key": "C",     "mods": "Control|Shift", "action": "Copy"             }
   - { "key": "V",     "mods": "Control|Shift", "action": "Paste"            }

@@ -21,8 +21,6 @@ default_border none
 smart_gaps on
 gaps inner 10px
 
-for_window [app_id="Alacritty"] opacity set 0.975
-
 input type:keyboard {
     xkb_layout  "cz"
     xkb_model   "pc105"
