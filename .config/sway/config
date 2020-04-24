@@ -16,6 +16,9 @@ set $workspace8 "8"
 set $workspace9 "9"
 set $workspace0 "10"
 
+smart_gaps on
+gaps inner 10px
+
 input type:keyboard {
     xkb_layout  "cz"
     xkb_model   "pc105"
