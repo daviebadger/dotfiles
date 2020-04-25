@@ -15,6 +15,11 @@ window:
     columns: 86
     lines: 34
 
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+
 font:
   normal:
     family: "UbuntuMono Nerd Font"
