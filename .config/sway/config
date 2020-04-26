@@ -29,7 +29,7 @@ input type:keyboard {
     xkb_variant "qwerty_bksl"
 }
 
-output * background ~/.config/sway/wallhaven-j5wd8p_1920x1080.png fill
+output * background ~/.config/wallhaven-j5wd8p_1920x1080.png fill
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
