@@ -1,7 +1,9 @@
 # swaylock-effects
 
+clock
 grace-no-mouse
 ignore-empty-password
+indicator
 
 fade-in=1
 grace=2
