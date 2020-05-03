@@ -16,3 +16,8 @@ inside-clear-color=fcc419
 line-clear-color=212529
 ring-clear-color=ffe066
 text-clear-color=212529
+
+inside-wrong-color=ff6b6b
+line-wrong-color=212529
+ring-wrong-color=ffa8a8
+text-wrong-color=212529
