@@ -8,3 +8,4 @@ indicator
 fade-in=1
 grace=2
 image=~/.config/wallhaven-j5wd8p_1920x1080.png
+scaling=fill
