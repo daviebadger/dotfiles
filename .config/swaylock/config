@@ -11,3 +11,8 @@ font-size=28
 grace=2
 image=~/.config/wallhaven-j5wd8p_1920x1080.png
 scaling=fill
+
+inside-clear-color=fcc419
+line-clear-color=212529
+ring-clear-color=ffe066
+text-clear-color=212529
