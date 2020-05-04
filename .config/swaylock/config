@@ -6,11 +6,15 @@ ignore-empty-password
 indicator
 
 fade-in=1
-font=UbuntuMono Nerd Font
-font-size=28
 grace=2
+
 image=~/.config/wallhaven-j5wd8p_1920x1080.png
 scaling=fill
+
+indicator-radius=150
+indicator-thickness=15
+
+font=UbuntuMono Nerd Font
 
 inside-color=212529
 line-color=51cf66
