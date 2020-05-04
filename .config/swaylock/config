@@ -12,12 +12,26 @@ grace=2
 image=~/.config/wallhaven-j5wd8p_1920x1080.png
 scaling=fill
 
-inside-clear-color=fcc419
-line-clear-color=212529
-ring-clear-color=ffe066
-text-clear-color=212529
+inside-color=212529
+line-color=51cf66
+ring-color=51cf66
+separator-color=51cf66
+text-color=f8f9fa
 
-inside-wrong-color=ff6b6b
-line-wrong-color=212529
-ring-wrong-color=ffa8a8
-text-wrong-color=212529
+key-hl-color=51cf66
+bs-hl-color=51cf66
+
+inside-clear-color=212529
+line-clear-color=fcc419
+ring-clear-color=fcc419
+text-clear-color=fcc419
+
+inside-ver-color=212529
+line-ver-color=4dabf7
+ring-ver-color=4dabf7
+text-ver-color=4dabf7
+
+inside-wrong-color=212529
+line-wrong-color=ff6b6b
+ring-wrong-color=ff6b6b
+text-wrong-color=ff6b6b
