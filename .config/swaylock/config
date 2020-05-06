@@ -1,6 +1,7 @@
 # swaylock-effects
 
 clock
+daemonize
 grace-no-mouse
 ignore-empty-password
 indicator
