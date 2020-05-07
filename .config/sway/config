@@ -23,13 +23,6 @@ gaps inner 10px
 
 focus_follows_mouse no
 
-input type:keyboard {
-    xkb_layout  "cz,ru"
-    xkb_model   "pc105"
-    xkb_variant "qwerty,phonetic_yazherty"
-    xkb_options "grp:shifts_toggle"
-}
-
 output * background ~/.config/wallhaven-j5wd8p_1920x1080.png fill
 
 include /etc/sway/config.d/*
