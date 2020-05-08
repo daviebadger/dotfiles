@@ -16,5 +16,7 @@ set $workspace8 "8"
 set $workspace9 "9"
 set $workspace0 "10"
 
+bindsym $mod+r reload
+
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
