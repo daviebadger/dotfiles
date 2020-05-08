@@ -3,6 +3,7 @@
 clock
 daemonize
 grace-no-mouse
+hide-keyboard-layout
 ignore-empty-password
 indicator
 
