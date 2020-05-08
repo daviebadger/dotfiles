@@ -16,12 +16,5 @@ set $workspace8 "8"
 set $workspace9 "9"
 set $workspace0 "10"
 
-default_border none
-
-smart_gaps on
-gaps inner 10px
-
-focus_follows_mouse no
-
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
