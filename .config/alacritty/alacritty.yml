@@ -5,24 +5,13 @@ env:
 
 window:
   dimensions:
-    # columns:
-    #   Vim:
-    #     - 6 columns for sign column
-    #     - 80 columns for characters
-    # lines:
-    #   Vim:
-    #     - 1 line for tab line
-    #     - 30 lines for file lines
-    #     - 1 line for status line
-    #     - 1 line for command line
-    #   Tmux:
-    #     - 1 line for status line
-    columns: 86
-    lines: 34
+    columns: 0
+    lines: 0
 
   padding:
     x: 10
     y: 10
+
   dynamic_padding: true
 
 font:
