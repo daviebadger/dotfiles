@@ -7,6 +7,10 @@ window:
   dimensions:
     columns: 0
     lines: 0
+    
+  position:
+    x: 0
+    y: 0
 
   padding:
     x: 10
