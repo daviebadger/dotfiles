@@ -1,5 +1,8 @@
 # Alacritty 0.9.0
 
+env:
+  TERM: alacritty
+
 window:
   dimensions:
     # columns:
