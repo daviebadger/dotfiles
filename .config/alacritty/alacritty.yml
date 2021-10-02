@@ -1,65 +1,9 @@
 # Alacritty 0.9.0
 
-env:
-  TERM: alacritty
-
-window:
-  dimensions:
-    # columns:
-    #   Vim:
-    #     - 6 columns for sign column
-    #     - 80 columns for characters
-    # lines:
-    #   Vim:
-    #     - 1 line for tab line
-    #     - 30 lines for file lines
-    #     - 1 line for status line
-    #     - 1 line for command line
-    #   Tmux:
-    #     - 1 line for status line
-    columns: 86
-    lines: 34
-
-  padding:
-    x: 10
-    y: 10
-  dynamic_padding: true
-
-font:
-  normal:
-    family: "UbuntuMono Nerd Font"
-  size: 14
-
-colors:
-  primary:
-    background: "#212529"
-    foreground: "#f8f9fa"
-
-  normal:
-    black:   "#212529"
-    red:     "#ff6b6b"
-    green:   "#51cf66"
-    yellow:  "#fcc419"
-    blue:    "#4dabf7"
-    magenta: "#e599f7"
-    cyan:    "#66d9e8"
-    white:   "#f8f9fa"
-
-  bright:
-    black:   "#868e96"
-    red:     "#f783ac"
-    green:   "#94d82d"
-    yellow:  "#ff922b"
-    blue:    "#748ffc"
-    magenta: "#9775fa"
-    cyan:    "#38d9a9"
-    white:   "#dee2e6"
-
-background_opacity: 0.975
-
-key_bindings:
-  - { "key": "C",     "mods": "Control|Shift", "action": "Copy"             }
-  - { "key": "V",     "mods": "Control|Shift", "action": "Paste"            }
-  - { "key": "Add",   "mods": "Control",       "action": "IncreaseFontSize" }
-  - { "key": "Minus", "mods": "Control",       "action": "DecreaseFontSize" }
-  - { "key": "Key0",  "mods": "Control|Shift", "action": "ResetFontSize"    }
+import:
+  - "~/.config/alacritty/conf.d/colors.yml"
+  - "~/.config/alacritty/conf.d/font.yml"
+  - "~/.config/alacritty/conf.d/hints.yml"
+  - "~/.config/alacritty/conf.d/key_bindings.yml"
+  - "~/.config/alacritty/conf.d/selection.yml"
+  - "~/.config/alacritty/conf.d/window.yml"

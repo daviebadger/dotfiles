@@ -1,0 +1,9 @@
+hints:
+  alphabet: "asdfghjklqwertyuiopzxcvbnm"
+  enabled:
+    - action: "Copy"
+      binding:
+        key: "S"
+        mods: "Control|Shift"
+      post_processing: true
+      regex: "(https:|http:|ssh:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
