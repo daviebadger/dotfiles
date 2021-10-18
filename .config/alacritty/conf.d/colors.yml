@@ -10,6 +10,13 @@ colors:
     red:     "#f783ac"
     white:   "#f8f9fa"
     yellow:  "#ff922b"
+  hints:
+    end:
+      background: CellForeground
+      foreground: CellBackground
+    start:
+      background: CellForeground
+      foreground: CellBackground
   normal:
     black:   "#212529"
     blue:    "#5c7cfa"
