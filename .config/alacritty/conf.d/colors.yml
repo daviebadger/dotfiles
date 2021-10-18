@@ -29,3 +29,13 @@ colors:
   primary:
     background: "#212529"
     foreground: "#f8f9fa"
+  search:
+    bar:
+      background: "#f8f9fa"
+      foreground: "#212529"
+    focused_match:
+      background: "#868e96"
+      foreground: "#212529"
+    matches:
+      background: "#f8f9fa"
+      foreground: "#212529"
