@@ -12,11 +12,11 @@ colors:
     yellow:  "#ff922b"
   hints:
     end:
-      background: CellForeground
-      foreground: CellBackground
+      background: "#f8f9fa"
+      foreground: "#212529"
     start:
-      background: CellForeground
-      foreground: CellBackground
+      background: "#f8f9fa"
+      foreground: "#212529"
   normal:
     black:   "#212529"
     blue:    "#5c7cfa"
