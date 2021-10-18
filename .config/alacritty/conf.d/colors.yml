@@ -1,21 +1,23 @@
+# https://github.com/daviebadger/colorscheme
+
 colors:
   bright:
     black:   "#868e96"
-    blue:    "#748ffc"
+    blue:    "#4dabf7"
     cyan:    "#38d9a9"
     green:   "#94d82d"
     magenta: "#9775fa"
     red:     "#f783ac"
-    white:   "#dee2e6"
+    white:   "#f8f9fa"
     yellow:  "#ff922b"
   normal:
     black:   "#212529"
-    blue:    "#4dabf7"
+    blue:    "#5c7cfa"
     cyan:    "#66d9e8"
     green:   "#51cf66"
     magenta: "#e599f7"
     red:     "#ff6b6b"
-    white:   "#f8f9fa"
+    white:   "#dee2e6"
     yellow:  "#fcc419"
   primary:
     background: "#212529"
