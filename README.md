@@ -1,6 +1,6 @@
 # Davie's Dotfiles
 
-My configuration files for software I have been using.
+My configuration files of software I have been using.
 
 ## Installation
 
