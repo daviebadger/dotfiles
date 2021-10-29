@@ -8,16 +8,7 @@ hints:
         key: "I"
         mods: "Control|Shift"
       post_processing: true
-      regex: "((\d{1,3}\.){3}\d{1,3})|([a-f\d:]+:+[a-f\d]+)"
-
-    # path
-
-    - action: "Copy"
-      binding:
-        key: "P"
-        mods: "Control|Shift"
-      post_processing: true
-      regex: "[^\s]+"
+      regex: "((\\d{1,3}\\.){3}\\d{1,3})|([a-f\\d:]+:+[a-f\\d]+)"
 
     # SHA
 
@@ -26,7 +17,7 @@ hints:
         key: "S"
         mods: "Control|Shift"
       post_processing: true
-      regex: "[a-f\d]{7,40}"
+      regex: "[a-f\\d]{7,40}"
 
     # URL
 
@@ -35,4 +26,4 @@ hints:
         key: "U"
         mods: "Control|Shift"
       post_processing: true
-      regex: "(https?|ssh)://[^\s]+"
+      regex: "(https?|ssh)://[\\S]+"
