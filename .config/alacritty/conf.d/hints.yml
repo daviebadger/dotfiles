@@ -26,4 +26,4 @@ hints:
         key: "U"
         mods: "Control|Shift"
       post_processing: true
-      regex: "(https?|ssh)://[\\S]+"
+      regex: "(https?|ssh)://\\S+"
