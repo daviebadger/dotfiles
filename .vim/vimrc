@@ -49,6 +49,8 @@
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'dhruvasagar/vim-table-mode'
+
 Plug 'airblade/vim-gitgutter'
 Plug 'challenger-deep-theme/vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -64,7 +66,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'ycm-core/YouCompleteMe', {'do': 'sudo python3 install.py'}
+Plug 'ycm-core/YouCompleteMe', {'do': 'python3 install.py'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -208,6 +210,7 @@ let g:riv_disable_indent = 1
 let g:riv_fold_info_pos = 'left'
 let g:riv_fold_level = 1
 let g:riv_section_levels = '*=-^"'''
+let g:riv_link_cursor_hl = 0
 
 " Syntastic
 " ^^^^^^^^^
@@ -301,19 +304,17 @@ set timeoutlen=1000 ttimeoutlen=0
 " -----------
 
 set expandtab
-set smarttab
 
 set shiftwidth=4
 set softtabstop=4
-set tabstop=4
 
-autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd Filetype css setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType json setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType rst setlocal shiftwidth=3 softtabstop=3 tabstop=3
-autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd Filetype html setlocal shiftwidth=2 softtabstop=2
+autocmd Filetype css setlocal shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
+autocmd FileType json setlocal shiftwidth=2 softtabstop=2
+autocmd FileType rst setlocal shiftwidth=3 softtabstop=3
+autocmd FileType sh setlocal shiftwidth=2 softtabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2
 
 " Mouse
 " -----
@@ -339,6 +340,9 @@ set directory=~/.vim/swaps//
 " Whitespaces
 " -----------
 
+set nojoinspaces
+set selection=exclusive
+
 highlight ExtraWhitespace ctermbg=red guibg=red
 
 match ExtraWhitespace /\s\+$/
@@ -359,5 +363,14 @@ set nowrap
 set splitbelow
 set splitright
 
+set nostartofline
+
 autocmd InsertEnter * set norelativenumber
 autocmd InsertLeave * set relativenumber
+
+set maxmempattern=2000
+
+" Tab-mode
+
+autocmd Filetype markdown let g:table_mode_corner='|'
+let g:table_mode_corner='|'

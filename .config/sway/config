@@ -1,3 +1,5 @@
+# https://www.reddit.com/r/swaywm/comments/g6v6cz/sway_seats_how_do_they_work_and_how_to_configure/
+
 set $mod Mod4
 
 set $left  h
