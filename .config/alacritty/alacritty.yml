@@ -1,4 +1,4 @@
-# Alacritty 0.10.x
+# Alacritty 0.12.x
 
 import:
   - "~/.config/alacritty/conf.d/colors.yml"
