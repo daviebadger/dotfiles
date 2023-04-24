@@ -1,10 +1,10 @@
 # Alacritty 0.12.x
 
 import:
+  - "~/.config/alacritty/conf.d/colors.yml"
   - "~/.config/alacritty/conf.d/font.yml"
   - "~/.config/alacritty/conf.d/window.yml"
   # TODO:
-  - "~/.config/alacritty/conf.d/colors.yml"
   - "~/.config/alacritty/conf.d/hints.yml"
   - "~/.config/alacritty/conf.d/key_bindings.yml"
   - "~/.config/alacritty/conf.d/selection.yml"
