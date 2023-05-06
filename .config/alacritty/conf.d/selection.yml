@@ -1,2 +1,5 @@
 selection:
-  semantic_escape_chars: " _-.,:;!?`'\"()[]{}|/\\\t"
+  # $ python3
+  # >>> import string
+  # >>> string.punctuation + string.whitespace
+  semantic_escape_chars: "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c"
