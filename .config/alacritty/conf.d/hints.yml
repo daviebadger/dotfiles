@@ -1,29 +1,4 @@
 hints:
-  alphabet: "asdfghjklqwertyuiopzxcvbnm"
-  enabled:
-    # IPv4 + IPv6
-
-    - action: "Copy"
-      binding:
-        key: "I"
-        mods: "Control|Shift"
-      post_processing: true
-      regex: "((\\d{1,3}\\.){3}\\d{1,3})|([a-f\\d:]+:+[a-f\\d]+)"
-
-    # SHA
-
-    - action: "Copy"
-      binding:
-        key: "S"
-        mods: "Control|Shift"
-      post_processing: true
-      regex: "[a-f\\d]{7,40}"
-
-    # URL
-
-    - action: "Copy"
-      binding:
-        key: "U"
-        mods: "Control|Shift"
-      post_processing: true
-      regex: "(https?|ssh)://\\S+"
+  # Czech QWERTZ keyboard layout
+  # home row + top row + bottom row (left hand + right hand)
+  alphabet: "fjdkslaůghrueiwoqptzvmc,x.y-bn"
