@@ -3,9 +3,17 @@ hints:
   # home row + top row + bottom row (left hand + right hand)
   alphabet: "fjdkslaůghrueiwoqptzvmc,x.y-bn"
   enabled:
+    # email
+    # https://ihateregex.io/expr/email
+    - action: "Copy"
+      binding:
+        key: "E"
+        mods: "Control|Shift"
+      regex: "[^@ \\t\\r\\n]+@[^@ \\t\\r\\n]+\\.[^@ \\t\\r\\n]+"
+
     # IP address (IPv4 + IPv6)
-    # https://ihateregex.io/expr/ip/
-    # https://ihateregex.io/expr/ipv6/
+    # https://ihateregex.io/expr/ip
+    # https://ihateregex.io/expr/ipv6
     - action: "Copy"
       binding:
         key: "I"
