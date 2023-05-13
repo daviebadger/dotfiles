@@ -3,14 +3,14 @@ hints:
   # home row + top row + bottom row (left hand + right hand)
   alphabet: "fjdkslaůghrueiwoqptzvmc,x.y-bn"
   enabled:
-    # Email
-    # https://ihateregex.io/expr/email
+    # Email address
     -
       action: "Copy"
       binding:
         key: "E"
         mods: "Control|Shift"
-      regex: "[^@ \\t\\r\\n]+@[^@ \\t\\r\\n]+\\.[^@ \\t\\r\\n]+"
+      post_processing: true
+      regex: "[^@\s]+@[^@\s]+"
     # IP address (IPv4 + IPv6)
     # https://ihateregex.io/expr/ip
     # https://ihateregex.io/expr/ipv6
