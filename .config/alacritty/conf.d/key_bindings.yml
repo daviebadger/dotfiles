@@ -1,2 +1,52 @@
+# https://manytricks.com/keycodes/
 key_bindings:
-  - { "key": "Key0",  "mods": "Control|Shift", "action": "ResetFontSize"    }
+  # General
+  -
+    action: "SpawnNewInstance"
+    key: "N"
+    mods: "Command|Shift"
+  -
+    action: "ToggleMaximized"
+    key: "M"
+    mods: "Command|Control"
+  -
+    action: "ToggleSimpleFullscreen"
+    key: "F"
+    mods: "Command|Shift"
+
+  # Vi mode (fixes for Czech keyboard layout)
+  -
+    action: "Bracket"
+    key: "Equals"
+    mode: "Vi"
+    mods: "Shift"
+  -
+    action: "First"
+    key: "Key0"
+    mode: "Vi"
+    mods: "Shift"
+  -
+    action: "FirstOccupied"
+    key: "Key6"
+    mode: "Vi"
+    mods: "Option"
+  -
+    action: "Last"
+    key: "Key4"
+    mode: "Vi"
+    mods: "Option"
+  -
+    action: "None"
+    key: "Slash"
+    mode: "Vi"
+    mods: "Shift"
+  -
+    action: "SearchBackward"
+    key: 43
+    mode: "Vi"
+    mods: "Shift"
+  -
+    action: "SearchForward"
+    key: 33
+    mode: "Vi"
+    mods: "Shift"
