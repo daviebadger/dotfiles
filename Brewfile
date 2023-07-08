@@ -1,10 +1,11 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 
 brew "git"
+brew "python@3.11"
+brew "rust"
 
 cask "alacritty"
+cask "docker"
 cask "font-hack-nerd-font"
 cask "key-codes"
