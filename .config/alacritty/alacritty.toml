@@ -1,0 +1,3 @@
+import = [
+  "~/.config/alacritty/conf.d/shell.toml"
+]
