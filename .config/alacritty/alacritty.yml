@@ -2,7 +2,6 @@
 
 import:
   - "~/.config/alacritty/conf.d/colors.yml"
-  - "~/.config/alacritty/conf.d/font.yml"
   - "~/.config/alacritty/conf.d/hints.yml"
   - "~/.config/alacritty/conf.d/key_bindings.yml"
   - "~/.config/alacritty/conf.d/mouse.yml"
