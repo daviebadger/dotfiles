@@ -6,6 +6,7 @@ import = [
   "~/.config/alacritty/conf.d/font.toml"
   "~/.config/alacritty/conf.d/scrolling.toml"
   "~/.config/alacritty/conf.d/shell.toml"
+  "~/.config/alacritty/conf.d/terminal.toml"
   "~/.config/alacritty/conf.d/window.toml"
 ]
 ipc_socket = true
