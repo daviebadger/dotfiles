@@ -1,0 +1,8 @@
+[debug]
+highlight_damage = false
+log_level = "Warn"
+persistent_logging = false
+prefer_egl = false
+print_events = false
+render_timer = false
+renderer = "None"
